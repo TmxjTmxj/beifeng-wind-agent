@@ -1,0 +1,12 @@
+{
+  "turbine_id": "string",
+  "model": "string",
+  "location": "string",
+  "component": "string",
+  "fault_history": [],
+  "maintenance_history": [],
+  "inspection_history": [],
+  "risk_notes": [],
+  "updated_at": "string"
+}
+

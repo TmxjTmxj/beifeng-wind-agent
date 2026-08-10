@@ -1,0 +1,19 @@
+{
+  "agent_name": "BeiFeng Wind O&M Agent",
+  "version": "1.1",
+  "default_model": "SDU-AI/DeepSeek-V4-Flash",
+  "knowledge_service_url": "http://127.0.0.1:8787",
+  "enable_memory": false,
+  "enable_report_generation": true,
+  "enable_scada_connector": false,
+  "enable_uav_connector": false,
+  "safety": {
+    "require_human_confirmation_for_high_risk": true,
+    "forbidden_actions": [
+      "未经授权远程停机",
+      "未经授权远程复位",
+      "绕过安全联锁",
+      "替代现场工程师判断"
+    ]
+  }
+}

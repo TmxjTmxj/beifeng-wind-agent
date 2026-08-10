@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "description": "Registry for public wind operations and maintenance knowledge sources. Store links and metadata only; do not copy large copyrighted content into this repository.",
+  "sources": [
+    {
+      "id": "example_public_source",
+      "title": "Example public wind O&M source",
+      "source_url": "https://example.com/wind-om-source",
+      "source_type": "public_reference",
+      "domain": "Maintenance",
+      "license_note": "Record the applicable license or usage note before ingesting local excerpts.",
+      "collected_at": null,
+      "local_path": null,
+      "notes": "Replace this placeholder with reviewed public source metadata."
+    }
+  ]
+}

@@ -1,0 +1,1620 @@
+{
+  "schema_version": "2.0",
+  "schema_notes": "V2.0 adds fault_mode, accompanying_symptoms, escalates_to, mitigated_by fields for relation-based reasoning",
+  "entries": [
+    {
+      "id": "blade_crack",
+      "component": "Blade",
+      "symptom": "叶片裂纹",
+      "fault_mode": "结构裂纹扩展",
+      "possible_causes": [
+        "前缘冲蚀后裂纹萌生与扩展",
+        "雷击或外物冲击损伤",
+        "表面涂层或结构层局部缺陷",
+        "疲劳载荷累积导致裂纹萌生"
+      ],
+      "accompanying_symptoms": [
+        "叶片异响",
+        "塔筒振动增大"
+      ],
+      "escalates_to": {
+        "fault": "叶尖脱落",
+        "condition": "裂纹扩展超过30cm"
+      },
+      "mitigated_by": [
+        "裂纹修补",
+        "叶片更换计划"
+      ],
+      "inspection_items": [
+        "裂纹长度与宽度",
+        "裂纹扩展方向与速率",
+        "裂纹位置是否接近主承载区域",
+        "裂纹深度（超声检测）"
+      ],
+      "inspection_methods": [
+        "无人机高清摄影复检",
+        "超声检测（UT）",
+        "声发射监测（AE）"
+      ],
+      "recommended_interval": "30天内复检；裂纹扩展明显应缩短至7天并升级评估",
+      "maintenance_actions": [
+        "记录缺陷位置并建立跟踪工单",
+        "安排叶片专业人员确认修补方案（补焊/贴片）",
+        "超声检测确认裂纹深度",
+        "如裂纹深度超过壁厚30%应安排停机修补"
+      ],
+      "risk_level": "Medium",
+      "shutdown_evaluation_conditions": [
+        "裂纹进入主承载区域",
+        "裂纹快速扩展（24h内增长>5mm）",
+        "伴随异常振动或叶片异响"
+      ],
+      "safety_notes": [
+        "不要直接远程停机或复位作为默认建议",
+        "登塔或近距离检查必须执行工作票和防坠落措施",
+        "涉及叶片结构安全时需人工确认和厂家支持"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/fault_cases/blade_crack_case.md",
+        "beifeng/knowledge/knowledge_base/fault_cases/blade_lightning_damage.md"
+      ]
+    },
+    {
+      "id": "blade_lightning_damage",
+      "component": "Blade",
+      "symptom": "雷击损伤",
+      "fault_mode": "雷击烧蚀与结构损伤",
+      "possible_causes": [
+        "直击雷导致叶片表面烧蚀和内部结构损伤",
+        "雷电电磁脉冲导致接闪器或引下线损坏",
+        "防雷系统退化导致雷击能量未有效泄放"
+      ],
+      "accompanying_symptoms": [
+        "叶片表面烧蚀痕迹",
+        "叶片内部异响"
+      ],
+      "escalates_to": {
+        "fault": "叶片结构失效",
+        "condition": "雷击烧蚀深入结构层或引下线断路未修复"
+      },
+      "mitigated_by": [
+        "雷击损伤修复",
+        "防雷系统检测与修复",
+        "叶片更换"
+      ],
+      "inspection_items": [
+        "叶片表面烧蚀范围与深度",
+        "接闪器和引下线导通性",
+        "叶片根部接地电阻",
+        "叶片内部结构完整性（内窥镜检查）"
+      ],
+      "inspection_methods": [
+        "无人机高清摄影",
+        "接地电阻测试",
+        "内窥镜检查",
+        "超声检测"
+      ],
+      "recommended_interval": "雷击事件后48小时内现场检查；修复后30天复检",
+      "maintenance_actions": [
+        "记录雷击事件并评估损伤等级",
+        "检测防雷系统完整性（接地电阻测试）",
+        "内窥镜检查叶片内部结构",
+        "更新防雷检测台账"
+      ],
+      "risk_level": "High",
+      "shutdown_evaluation_conditions": [
+        "烧蚀深度进入结构层",
+        "引下线断路导致防雷失效",
+        "叶片内部出现明显结构分离"
+      ],
+      "safety_notes": [
+        "雷击后必须等待30分钟以上方可登塔检查",
+        "防雷系统检测需由具备资质人员执行",
+        "不得在雷暴天气进行叶片检查"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/fault_cases/blade_lightning_damage.md"
+      ]
+    },
+    {
+      "id": "blade_leading_edge_erosion",
+      "component": "Blade",
+      "symptom": "前缘侵蚀",
+      "fault_mode": "前缘材料冲蚀退化",
+      "possible_causes": [
+        "雨蚀导致前缘保护层剥落",
+        "沙尘环境加速前缘磨损",
+        "前缘保护膜老化脱落"
+      ],
+      "accompanying_symptoms": [
+        "功率曲线偏低",
+        "气动噪声增大"
+      ],
+      "escalates_to": {
+        "fault": "叶片裂纹萌生",
+        "condition": "前缘侵蚀深度超过2mm未修复，持续运行超过6个月"
+      },
+      "mitigated_by": [
+        "前缘保护膜修复",
+        "前缘贴片补强"
+      ],
+      "inspection_items": [
+        "侵蚀深度与面积",
+        "保护层剥落程度",
+        "是否已萌生裂纹",
+        "功率曲线偏移量"
+      ],
+      "inspection_methods": [
+        "无人机高清摄影",
+        "叶片前缘3D扫描",
+        "功率曲线对比分析"
+      ],
+      "recommended_interval": "每6个月检查前缘状态；侵蚀深度>1mm应安排修复窗口",
+      "maintenance_actions": [
+        "评估前缘修复方案（前缘贴片/涂覆/更换）",
+        "叶片前缘3D扫描确认侵蚀深度",
+        "安排修复施工窗口",
+        "修复后验证功率曲线恢复"
+      ],
+      "risk_level": "Medium",
+      "shutdown_evaluation_conditions": [
+        "侵蚀深度超过2mm",
+        "伴随裂纹萌生",
+        "功率损失超过5%且持续恶化"
+      ],
+      "safety_notes": [
+        "高空叶片作业需执行坠落防护",
+        "前缘修复材料需与叶片材质兼容"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/fault_cases/blade_leading_edge_erosion.md"
+      ]
+    },
+    {
+      "id": "blade_icing",
+      "component": "Blade",
+      "symptom": "叶片覆冰",
+      "fault_mode": "冰覆导致气动失衡",
+      "possible_causes": [
+        "低温高湿环境导致叶片表面结冰",
+        "防冰系统故障或未启动",
+        "叶片表面粗糙度增加加速冰覆"
+      ],
+      "accompanying_symptoms": [
+        "功率骤降",
+        "振动增大",
+        "叶片异响"
+      ],
+      "escalates_to": {
+        "fault": "叶片甩冰伤害",
+        "condition": "覆冰厚度>50mm且机组继续运行"
+      },
+      "mitigated_by": [
+        "启动防冰/除冰系统",
+        "停机待融冰",
+        "限制功率运行"
+      ],
+      "inspection_items": [
+        "覆冰厚度与分布",
+        "防冰系统运行状态",
+        "环境温度与湿度",
+        "机组振动水平"
+      ],
+      "inspection_methods": [
+        "无人机红外热成像",
+        "SCADA数据分析",
+        "气象数据监测"
+      ],
+      "recommended_interval": "覆冰季节每日监控；覆冰事件后立即评估",
+      "maintenance_actions": [
+        "启动防冰除冰系统",
+        "甩冰区域设置安全警戒",
+        "如防冰系统失效则停机等待自然融冰",
+        "融冰后检查叶片表面损伤并校验防冰系统"
+      ],
+      "risk_level": "High",
+      "shutdown_evaluation_conditions": [
+        "覆冰厚度超过50mm",
+        "振动值超过限值",
+        "甩冰风险区域有人或设施"
+      ],
+      "safety_notes": [
+        "甩冰区域必须设置安全警戒",
+        "不得在覆冰条件下远程启动机组",
+        "覆冰检查需等待自然脱落或确认安全"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/safety_rules/blade_icing_safety.md"
+      ]
+    },
+    {
+      "id": "gearbox_oil_temperature_high",
+      "component": "Gearbox",
+      "symptom": "齿轮箱油温升高",
+      "fault_mode": "润滑系统异常",
+      "possible_causes": [
+        "润滑油劣化或油位异常",
+        "冷却系统效率下降",
+        "滤芯堵塞导致压差升高",
+        "高速轴轴承或齿轮啮合异常"
+      ],
+      "accompanying_symptoms": [
+        "轴承振动增大",
+        "油样金属含量升高"
+      ],
+      "escalates_to": {
+        "fault": "gearbox_bearing_spalling",
+        "condition": "持续运行超过48小时且未处理"
+      },
+      "mitigated_by": [
+        "更换润滑油",
+        "冷却系统检修",
+        "滤芯更换"
+      ],
+      "inspection_items": [
+        "油温趋势",
+        "油位和油品状态",
+        "冷却风扇或水冷回路",
+        "滤芯压差",
+        "轴承温度与振动趋势"
+      ],
+      "inspection_methods": [
+        "SCADA趋势对比",
+        "现场油样检查",
+        "冷却系统巡检",
+        "振动频谱分析"
+      ],
+      "recommended_interval": "温度持续异常时当天复核趋势；处理后7天内复测",
+      "maintenance_actions": [
+        "清洁或检修冷却系统",
+        "油样光谱分析确认金属含量",
+        "检查并按规程更换滤芯",
+        "如油样金属含量异常升高应安排内窥镜检查"
+      ],
+      "risk_level": "High",
+      "shutdown_evaluation_conditions": [
+        "油温持续上升且接近保护阈值",
+        "油温异常伴随振动明显升高",
+        "出现润滑失效、异响或金属屑迹象"
+      ],
+      "safety_notes": [
+        "高温部件检查需防烫伤",
+        "传动链检查需确认机组安全隔离",
+        "不得绕过保护或修改温度阈值"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/manuals/gearbox_temp_manual.md",
+        "beifeng/knowledge/knowledge_base/fault_cases/gearbox_oil_temp_rise.md"
+      ]
+    },
+    {
+      "id": "gearbox_tooth_pitting",
+      "component": "Gearbox",
+      "symptom": "齿面点蚀",
+      "fault_mode": "齿面接触疲劳",
+      "possible_causes": [
+        "润滑不良导致油膜破裂",
+        "齿轮表面硬度不足",
+        "长期过载运行",
+        "齿面初始加工缺陷"
+      ],
+      "accompanying_symptoms": [
+        "油样铁磁颗粒增多",
+        "振动频谱啮合频率处出现边频"
+      ],
+      "escalates_to": {
+        "fault": "齿面剥落或断裂",
+        "condition": "点蚀面积扩展超过齿面10%且继续运行"
+      },
+      "mitigated_by": [
+        "更换润滑油",
+        "降低载荷运行",
+        "齿轮修形或更换"
+      ],
+      "inspection_items": [
+        "油样光谱和铁谱分析",
+        "振动频谱啮合频率分析",
+        "内窥镜齿面检查",
+        "油温趋势"
+      ],
+      "inspection_methods": [
+        "油样光谱分析",
+        "振动频谱分析",
+        "内窥镜检查"
+      ],
+      "recommended_interval": "点蚀发现后7天内安排内窥镜确认；每月跟踪油样",
+      "maintenance_actions": [
+        "安排内窥镜检查确认点蚀程度",
+        "根据点蚀等级决定是否降载运行",
+        "磁粉探伤确认齿面缺陷范围",
+        "制定齿轮更换或修复计划"
+      ],
+      "risk_level": "Critical",
+      "shutdown_evaluation_conditions": [
+        "点蚀面积超过齿面10%",
+        "振动值持续上升",
+        "油样金属含量急剧增加"
+      ],
+      "safety_notes": [
+        "齿面损伤评估需由专业工程师确认",
+        "Critical级故障不得延迟处置",
+        "传动链检查需确认机组完全隔离"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/fault_cases/gearbox_tooth_pitting.md"
+      ]
+    },
+    {
+      "id": "gearbox_bearing_spalling",
+      "component": "Gearbox",
+      "symptom": "齿轮箱轴承剥落",
+      "fault_mode": "轴承滚动体疲劳剥落",
+      "possible_causes": [
+        "轴承长期过载",
+        "润滑不良导致滚道损伤",
+        "轴承安装不当（过盈量不合适）",
+        "电流腐蚀导致滚道表面损伤"
+      ],
+      "accompanying_symptoms": [
+        "振动冲击值增大",
+        "油温升高",
+        "油样大颗粒金属"
+      ],
+      "escalates_to": {
+        "fault": "轴承卡死或碎裂",
+        "condition": "剥落面积扩展且振动冲击值超过ISO 10816限值"
+      },
+      "mitigated_by": [
+        "计划性轴承更换",
+        "加密监测频率"
+      ],
+      "inspection_items": [
+        "振动冲击值（峰值/RMS比）",
+        "油样铁谱大颗粒分析",
+        "轴承温度趋势",
+        "振动包络分析"
+      ],
+      "inspection_methods": [
+        "振动包络分析",
+        "油样铁谱分析",
+        "SCADA温度趋势",
+        "内窥镜检查"
+      ],
+      "recommended_interval": "剥落确认后每日跟踪振动；7天内制定处置方案",
+      "maintenance_actions": [
+        "振动包络分析确认剥落程度",
+        "制定计划性轴承更换窗口",
+        "更换前加密监测频率",
+        "更换后进行对中检查和动平衡校正"
+      ],
+      "risk_level": "Critical",
+      "shutdown_evaluation_conditions": [
+        "振动冲击值超过ISO限值",
+        "油样出现大颗粒金属（>100μm）",
+        "轴承温度急剧上升"
+      ],
+      "safety_notes": [
+        "Critical级故障建议尽快停机处置",
+        "轴承更换需由具备资质的维修团队执行",
+        "更换后必须进行传动链对中检查"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/fault_cases/gearbox_bearing_spalling.md"
+      ]
+    },
+    {
+      "id": "gearbox_planet_carrier_crack",
+      "component": "Gearbox",
+      "symptom": "行星架裂纹",
+      "fault_mode": "行星架结构疲劳开裂",
+      "possible_causes": [
+        "设计或制造缺陷（铸件气孔、夹渣）",
+        "长期交变载荷导致疲劳开裂",
+        "异常冲击载荷"
+      ],
+      "accompanying_symptoms": [
+        "振动频谱出现非特征频率",
+        "油样大颗粒金属",
+        "异响"
+      ],
+      "escalates_to": {
+        "fault": "行星架断裂",
+        "condition": "裂纹持续扩展未处置，可能导致齿轮箱灾难性失效"
+      },
+      "mitigated_by": [
+        "紧急停机评估",
+        "行星架修复或更换",
+        "齿轮箱更换"
+      ],
+      "inspection_items": [
+        "振动频谱非特征频率分量",
+        "油样大颗粒分析",
+        "内窥镜行星架检查",
+        "现场听音检查"
+      ],
+      "inspection_methods": [
+        "振动频谱分析",
+        "油样铁谱分析",
+        "内窥镜检查"
+      ],
+      "recommended_interval": "发现可疑迹象立即安排内窥镜确认",
+      "maintenance_actions": [
+        "紧急停机评估",
+        "安排内窥镜检查确认裂纹",
+        "磁粉探伤确认裂纹范围",
+        "联系齿轮箱厂家评估修复方案"
+      ],
+      "risk_level": "Critical",
+      "shutdown_evaluation_conditions": [
+        "内窥镜确认行星架裂纹",
+        "振动频谱出现非特征频率且持续恶化",
+        "油样出现大块金属颗粒"
+      ],
+      "safety_notes": [
+        "行星架裂纹是齿轮箱灾难性失效前兆，必须高度重视",
+        "不得延迟Critical级故障处置",
+        "更换齿轮箱需完整的安全施工方案"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/fault_cases/gearbox_planet_carrier_crack.md"
+      ]
+    },
+    {
+      "id": "generator_bearing_vibration",
+      "component": "Generator",
+      "symptom": "发电机轴承振动异常",
+      "fault_mode": "轴承磨损或损伤",
+      "possible_causes": [
+        "轴承磨损或润滑异常",
+        "对中偏差",
+        "转子不平衡",
+        "冷却或电磁异常引发附加振动"
+      ],
+      "accompanying_symptoms": [
+        "轴承温度升高",
+        "润滑油变色"
+      ],
+      "escalates_to": {
+        "fault": "轴承烧损",
+        "condition": "连续振动超过72小时"
+      },
+      "mitigated_by": [
+        "润滑维护",
+        "对中校正",
+        "计划性轴承更换"
+      ],
+      "inspection_items": [
+        "振动幅值趋势",
+        "频谱特征",
+        "轴承温度",
+        "润滑状态",
+        "发电机电流和温度"
+      ],
+      "inspection_methods": [
+        "振动频谱分析",
+        "SCADA温度趋势对比",
+        "现场听音和红外测温"
+      ],
+      "recommended_interval": "异常初现后7天内复测；趋势持续上升应缩短到每日跟踪",
+      "maintenance_actions": [
+        "振动频谱分析确认振动特征",
+        "检查润滑和冷却状态",
+        "计划轴承检修窗口和对中校正",
+        "更换后必须进行对中检查"
+      ],
+      "risk_level": "High",
+      "shutdown_evaluation_conditions": [
+        "振动快速上升",
+        "振动异常伴随轴承温度升高",
+        "出现异响、烧蚀气味或电流异常"
+      ],
+      "safety_notes": [
+        "旋转设备检查需保持安全距离",
+        "高压电气检查必须由具备资质人员执行",
+        "不得屏蔽振动或温度保护"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/fault_cases/generator_bearing_vibration.md"
+      ]
+    },
+    {
+      "id": "generator_stator_insulation_aging",
+      "component": "Generator",
+      "symptom": "定子绝缘老化",
+      "fault_mode": "绝缘退化",
+      "possible_causes": [
+        "长期热老化导致绝缘材料性能下降",
+        "电蚀或局部放电损伤",
+        "潮湿环境导致绝缘受潮",
+        "振动摩擦导致绝缘磨损"
+      ],
+      "accompanying_symptoms": [
+        "绝缘电阻下降",
+        "局部放电增大",
+        "绕组温度偏高"
+      ],
+      "escalates_to": {
+        "fault": "定子绕组击穿短路",
+        "condition": "绝缘电阻持续下降至安全值以下"
+      },
+      "mitigated_by": [
+        "绝缘干燥处理",
+        "绕组修复或重绕",
+        "更换发电机"
+      ],
+      "inspection_items": [
+        "绝缘电阻值（IR）",
+        "极化指数（PI）",
+        "局部放电检测",
+        "绕组温度趋势"
+      ],
+      "inspection_methods": [
+        "兆欧表绝缘电阻测试",
+        "极化指数测试",
+        "局部放电在线监测",
+        "红外热成像"
+      ],
+      "recommended_interval": "每年预防性测试；IR值低于警告值应加密监测",
+      "maintenance_actions": [
+        "兆欧表测试绝缘电阻",
+        "极化指数测试评估绝缘退化程度",
+        "绝缘干燥处理或绕组修复",
+        "必要时计划更换发电机"
+      ],
+      "risk_level": "High",
+      "shutdown_evaluation_conditions": [
+        "绝缘电阻低于最低安全值",
+        "局部放电量急剧增大",
+        "出现接地故障报警"
+      ],
+      "safety_notes": [
+        "高压电气测试必须由持证人员执行",
+        "测试前必须确认设备完全隔离和接地",
+        "不得带电检测绝缘"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/fault_cases/generator_insulation_aging.md"
+      ]
+    },
+    {
+      "id": "generator_rotor_unbalance",
+      "component": "Generator",
+      "symptom": "转子不平衡",
+      "fault_mode": "机械失衡",
+      "possible_causes": [
+        "转子质量分布不均",
+        "转子材料脱落或移位",
+        "轴承磨损导致转子偏心",
+        "冷却风扇叶片断裂"
+      ],
+      "accompanying_symptoms": [
+        "1倍频振动分量增大",
+        "轴承温度偏高"
+      ],
+      "escalates_to": {
+        "fault": "轴承过载失效",
+        "condition": "振动值超过允许范围持续运行"
+      },
+      "mitigated_by": [
+        "现场动平衡校正",
+        "转子修复或更换"
+      ],
+      "inspection_items": [
+        "振动1倍频分量",
+        "振动相位分析",
+        "轴承温度趋势",
+        "启停过程振动变化"
+      ],
+      "inspection_methods": [
+        "振动频谱与相位分析",
+        "现场动平衡测试",
+        "SCADA温度趋势"
+      ],
+      "recommended_interval": "发现1倍频增大后7天内评估；处理后30天复检",
+      "maintenance_actions": [
+        "现场动平衡校正",
+        "检查冷却风扇完整性",
+        "校正后验证振动水平恢复"
+      ],
+      "risk_level": "Medium",
+      "shutdown_evaluation_conditions": [
+        "1倍频振动持续增大",
+        "振动值超过ISO 10816限值",
+        "轴承温度异常升高"
+      ],
+      "safety_notes": [
+        "动平衡校正需专业人员操作",
+        "高速旋转部件附近需保持安全距离"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/vibration_analysis/rotor_unbalance_diagnosis.md"
+      ]
+    },
+    {
+      "id": "yaw_motor_fault",
+      "component": "Yaw",
+      "symptom": "偏航电机故障",
+      "fault_mode": "驱动电机失效",
+      "possible_causes": [
+        "电机绕组绝缘损坏",
+        "电机轴承磨损",
+        "电机驱动器故障",
+        "电气连接松动"
+      ],
+      "accompanying_symptoms": [
+        "偏航电流异常",
+        "偏航动作迟缓"
+      ],
+      "escalates_to": {
+        "fault": "偏航系统失效",
+        "condition": "多个偏航电机同时故障或偏航完全无法动作"
+      },
+      "mitigated_by": [
+        "电机维修或更换",
+        "驱动器更换"
+      ],
+      "inspection_items": [
+        "偏航电机电流",
+        "电机绝缘电阻",
+        "电机温度",
+        "驱动器输出信号",
+        "电气连接状态"
+      ],
+      "inspection_methods": [
+        "万用表和兆欧表检测",
+        "SCADA电流趋势分析",
+        "红外热成像"
+      ],
+      "recommended_interval": "报警后尽快现场检查；更换后7天复检",
+      "maintenance_actions": [
+        "兆欧表检测电机绕组绝缘",
+        "红外热成像检查电机温度",
+        "检查驱动器输出信号",
+        "更换故障电机或驱动器"
+      ],
+      "risk_level": "Medium",
+      "shutdown_evaluation_conditions": [
+        "偏航完全无法动作",
+        "电机过热或有烧损迹象",
+        "偏航误差持续超限"
+      ],
+      "safety_notes": [
+        "偏航系统维修需确认机舱内安全",
+        "电气维修需执行停电挂牌",
+        "高空作业需防坠落保护"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/fault_cases/yaw_motor_fault.md"
+      ]
+    },
+    {
+      "id": "yaw_brake_wear",
+      "component": "Yaw",
+      "symptom": "偏航制动器磨损",
+      "fault_mode": "制动器退化和偏航漂移",
+      "possible_causes": [
+        "制动摩擦片磨损超限",
+        "制动液压压力不足",
+        "制动器弹簧疲劳",
+        "偏航齿圈润滑不足导致制动负荷增大"
+      ],
+      "accompanying_symptoms": [
+        "偏航漂移",
+        "偏航精度下降"
+      ],
+      "escalates_to": {
+        "fault": "偏航失控",
+        "condition": "制动器完全失效且偏航自由旋转"
+      },
+      "mitigated_by": [
+        "更换摩擦片",
+        "液压系统检修",
+        "弹簧更换"
+      ],
+      "inspection_items": [
+        "摩擦片厚度",
+        "制动液压压力",
+        "制动器弹簧状态",
+        "偏航保持精度"
+      ],
+      "inspection_methods": [
+        "目视检查摩擦片磨损",
+        "压力表检测制动压力",
+        "SCADA偏航角度趋势"
+      ],
+      "recommended_interval": "每6个月检查制动器磨损；摩擦片厚度<50%时安排更换",
+      "maintenance_actions": [
+        "更换磨损摩擦片",
+        "制动压力调整和验证",
+        "检查制动器弹簧张力",
+        "验证偏航保持精度"
+      ],
+      "risk_level": "Medium",
+      "shutdown_evaluation_conditions": [
+        "偏航制动完全失效",
+        "偏航自由旋转风险",
+        "制动器液压系统泄漏"
+      ],
+      "safety_notes": [
+        "偏航制动维修需确认机舱固定安全",
+        "液压系统维修需释放压力",
+        "不得在制动失效时远程启动偏航"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/fault_cases/yaw_brake_wear.md"
+      ]
+    },
+    {
+      "id": "pitch_stuck",
+      "component": "Pitch",
+      "symptom": "变桨卡滞",
+      "fault_mode": "变桨机构机械卡死",
+      "possible_causes": [
+        "变桨轴承润滑不良或锈蚀",
+        "变桨齿轮与齿圈啮合异常",
+        "变桨驱动电机或减速器故障",
+        "异物卡入变桨机构"
+      ],
+      "accompanying_symptoms": [
+        "变桨角度异常",
+        "功率波动",
+        "变桨电流增大"
+      ],
+      "escalates_to": {
+        "fault": "叶片气动失控",
+        "condition": "变桨完全卡死在开桨位置且风速超过额定"
+      },
+      "mitigated_by": [
+        "变桨轴承润滑",
+        "机构清洗检查",
+        "驱动系统维修"
+      ],
+      "inspection_items": [
+        "变桨角度响应",
+        "变桨电流趋势",
+        "变桨轴承润滑状态",
+        "齿轮齿圈啮合状态"
+      ],
+      "inspection_methods": [
+        "SCADA变桨角度分析",
+        "现场变桨动作测试",
+        "润滑脂检查",
+        "红外热成像"
+      ],
+      "recommended_interval": "报警后尽快检查；处理后7天复检",
+      "maintenance_actions": [
+        "变桨轴承润滑脂补充",
+        "变桨机构清洗检查",
+        "变桨动作测试验证",
+        "必要时更换变桨轴承"
+      ],
+      "risk_level": "High",
+      "shutdown_evaluation_conditions": [
+        "变桨完全无法动作",
+        "变桨卡死在开桨位置且风速增大",
+        "变桨超时报警频繁触发"
+      ],
+      "safety_notes": [
+        "变桨系统维修需确认叶片处于安全位置",
+        "变桨操作涉及高压和机械风险，需持证操作",
+        "不得在变桨异常时远程复位"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/fault_cases/pitch_system_fault.md"
+      ]
+    },
+    {
+      "id": "pitch_battery_failure",
+      "component": "Pitch",
+      "symptom": "变桨电池失效",
+      "fault_mode": "备用电源失效",
+      "possible_causes": [
+        "蓄电池老化容量衰减",
+        "充电系统故障导致充电不足",
+        "电池环境温度过高导致加速老化",
+        "电池管理系统故障"
+      ],
+      "accompanying_symptoms": [
+        "变桨后备电源电压低",
+        "充电电流异常",
+        "变桨响应迟滞",
+        "紧急顺桨失败"
+      ],
+      "escalates_to": {
+        "fault": "紧急变桨失效",
+        "condition": "电池完全失效且电网断电时无法顺桨"
+      },
+      "mitigated_by": [
+        "电池组更换",
+        "充电系统维修"
+      ],
+      "inspection_items": [
+        "电池组电压",
+        "电池内阻",
+        "充电系统输出",
+        "后备顺桨测试"
+      ],
+      "inspection_methods": [
+        "电池电压和内阻测试",
+        "后备顺桨功能测试",
+        "充电系统检测"
+      ],
+      "recommended_interval": "每季度检查电池状态；电压低于80%额定值应更换",
+      "maintenance_actions": [
+        "更换失效电池组",
+        "检查充电系统",
+        "后备顺桨功能验证",
+        "建立电池更换台账"
+      ],
+      "risk_level": "High",
+      "shutdown_evaluation_conditions": [
+        "电池完全失效且无后备",
+        "后备顺桨功能测试失败",
+        "电池鼓包或漏液"
+      ],
+      "safety_notes": [
+        "变桨电池失效是重大安全隐患，必须优先处置",
+        "电池更换需注意正负极和电压等级",
+        "不得在电池失效状态下继续运行"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/fault_cases/pitch_battery_failure.md"
+      ]
+    },
+    {
+      "id": "hydraulic_oil_leak",
+      "component": "Hydraulic",
+      "symptom": "液压油泄漏",
+      "fault_mode": "液压系统密封失效",
+      "possible_causes": [
+        "密封件老化或损坏",
+        "管路接头松动或损坏",
+        "液压缸内泄",
+        "管路腐蚀或机械损伤"
+      ],
+      "accompanying_symptoms": [
+        "液压压力下降",
+        "制动器响应迟缓"
+      ],
+      "escalates_to": {
+        "fault": "液压系统失效",
+        "condition": "油位低于最低运行液位且无法维持压力"
+      },
+      "mitigated_by": [
+        "更换密封件",
+        "管路修复",
+        "补充液压油"
+      ],
+      "inspection_items": [
+        "液压油位",
+        "系统压力",
+        "泄漏点定位",
+        "管路和接头状态",
+        "液压油品质"
+      ],
+      "inspection_methods": [
+        "目视检查泄漏点",
+        "压力测试",
+        "荧光示踪检漏",
+        "油样分析"
+      ],
+      "recommended_interval": "发现泄漏后当天评估严重程度；处理后7天复检",
+      "maintenance_actions": [
+        "荧光示踪检漏定位泄漏点",
+        "更换损坏密封件或管路",
+        "补充液压油至规定液位",
+        "更换后执行系统排气和压力验证"
+      ],
+      "risk_level": "High",
+      "shutdown_evaluation_conditions": [
+        "油位低于最低运行液位",
+        "无法维持制动压力",
+        "液压油大量喷溅（安全风险）"
+      ],
+      "safety_notes": [
+        "高压液压系统维修需释放压力",
+        "液压油属危废品需规范处置",
+        "泄漏导致制动失效时应立即停机"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/fault_cases/hydraulic_system_fault.md"
+      ]
+    },
+    {
+      "id": "converter_overtemperature",
+      "component": "Converter",
+      "symptom": "变流器过温",
+      "fault_mode": "功率模块热失控",
+      "possible_causes": [
+        "散热系统故障（风扇/水泵）",
+        "IGBT模块老化导致损耗增大",
+        "环境温度过高或通风不良",
+        "网侧谐波增大导致额外损耗"
+      ],
+      "accompanying_symptoms": [
+        "变频器报警",
+        "输出功率受限"
+      ],
+      "escalates_to": {
+        "fault": "IGBT模块烧毁",
+        "condition": "温度持续超过IGBT最高允许结温"
+      },
+      "mitigated_by": [
+        "散热系统检修",
+        "IGBT模块更换",
+        "改善通风"
+      ],
+      "inspection_items": [
+        "IGBT模块温度",
+        "散热系统运行状态",
+        "机舱通风状态",
+        "网侧电能质量",
+        "冷却液位和流量"
+      ],
+      "inspection_methods": [
+        "红外热成像",
+        "SCADA温度趋势",
+        "冷却系统巡检",
+        "电能质量分析"
+      ],
+      "recommended_interval": "过温报警后立即检查；处理后7天复检",
+      "maintenance_actions": [
+        "红外热成像确认过热区域",
+        "清洁散热器和滤网",
+        "检查冷却液位和流量",
+        "必要时IGBT模块更换"
+      ],
+      "risk_level": "Critical",
+      "shutdown_evaluation_conditions": [
+        "温度超过IGBT最高允许结温",
+        "散热系统完全失效",
+        "出现烧损气味或冒烟"
+      ],
+      "safety_notes": [
+        "变流器含高压直流和交流，维修必须由持证人员执行",
+        "维修前必须确认电容放电完成",
+        "不得在过温状态下继续运行"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/fault_cases/converter_overtemp.md"
+      ]
+    },
+    {
+      "id": "converter_igbt_fault",
+      "component": "Converter",
+      "symptom": "IGBT故障",
+      "fault_mode": "功率半导体失效",
+      "possible_causes": [
+        "过电压击穿",
+        "过电流烧毁",
+        "热循环导致键合线脱落",
+        "驱动电路故障"
+      ],
+      "accompanying_symptoms": [
+        "变频器故障报警",
+        "输出电流异常",
+        "谐波增大"
+      ],
+      "escalates_to": {
+        "fault": "变流器柜火灾",
+        "condition": "IGBT短路引发级联故障"
+      },
+      "mitigated_by": [
+        "IGBT模块更换",
+        "驱动板更换",
+        "保护参数校验"
+      ],
+      "inspection_items": [
+        "IGBT模块外观",
+        "驱动信号",
+        "直流母线电压",
+        "输出电流波形",
+        "保护动作记录"
+      ],
+      "inspection_methods": [
+        "万用表和示波器检测",
+        "故障录波分析",
+        "红外热成像",
+        "保护动作日志分析"
+      ],
+      "recommended_interval": "故障报警后立即停机检查",
+      "maintenance_actions": [
+        "示波器检测驱动信号",
+        "更换故障IGBT模块",
+        "校验保护参数设置",
+        "更换后进行并网测试"
+      ],
+      "risk_level": "Critical",
+      "shutdown_evaluation_conditions": [
+        "IGBT击穿或烧毁",
+        "直流母线过压",
+        "输出短路"
+      ],
+      "safety_notes": [
+        "IGBT故障涉及高压，必须由专业电气人员处置",
+        "更换前必须确认断电和电容放电",
+        "不得远程复位IGBT故障"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/fault_cases/converter_igbt_fault.md"
+      ]
+    },
+    {
+      "id": "tower_bolt_loosening",
+      "component": "Tower",
+      "symptom": "塔筒螺栓松动",
+      "fault_mode": "连接件预紧力退化",
+      "possible_causes": [
+        "预紧力不足或衰减",
+        "振动导致螺栓松动",
+        "螺栓材质或热处理不合格",
+        "安装工艺不规范"
+      ],
+      "accompanying_symptoms": [
+        "塔筒连接处异响",
+        "塔筒振动增大"
+      ],
+      "escalates_to": {
+        "fault": "tower_crack",
+        "condition": "螺栓预紧力低于设计值50%"
+      },
+      "mitigated_by": [
+        "螺栓复紧",
+        "螺栓更换",
+        "法兰面检查"
+      ],
+      "inspection_items": [
+        "螺栓预紧力（液压扭矩）",
+        "法兰间隙",
+        "螺栓外观（裂纹、锈蚀）",
+        "塔筒垂直度"
+      ],
+      "inspection_methods": [
+        "液压扭矩扳手检测",
+        "塞尺检测法兰间隙",
+        "磁粉探伤（MT）",
+        "全站仪测量垂直度"
+      ],
+      "recommended_interval": "每年例行检查；新投运机组6个月后首次检查",
+      "maintenance_actions": [
+        "液压扭矩扳手复紧松动螺栓",
+        "磁粉探伤检查螺栓裂纹",
+        "更换不合格螺栓",
+        "建立螺栓检查台账"
+      ],
+      "risk_level": "High",
+      "shutdown_evaluation_conditions": [
+        "同一法兰面超过20%螺栓松动",
+        "法兰间隙超过允许值",
+        "发现螺栓裂纹"
+      ],
+      "safety_notes": [
+        "塔筒螺栓检查需登塔，执行防坠落措施",
+        "液压扭矩工具使用需培训合格",
+        "发现螺栓裂纹应立即评估结构安全"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/fault_cases/tower_bolt_loosening.md"
+      ]
+    },
+    {
+      "id": "tower_crack",
+      "component": "Tower",
+      "symptom": "塔筒裂纹",
+      "fault_mode": "结构疲劳开裂",
+      "possible_causes": [
+        "焊接缺陷（未焊透、夹渣）",
+        "疲劳载荷累积",
+        "腐蚀减薄导致应力集中",
+        "制造或运输损伤"
+      ],
+      "accompanying_symptoms": [
+        "塔筒异响",
+        "振动频谱异常"
+      ],
+      "escalates_to": {
+        "fault": "塔筒断裂倒塌",
+        "condition": "裂纹贯穿壁厚且继续扩展"
+      },
+      "mitigated_by": [
+        "裂纹打磨补焊",
+        "加强板加固",
+        "塔筒段更换"
+      ],
+      "inspection_items": [
+        "裂纹位置、长度和深度",
+        "裂纹扩展速率",
+        "焊缝质量",
+        "塔筒壁厚"
+      ],
+      "inspection_methods": [
+        "磁粉探伤（MT）",
+        "超声检测（UT）",
+        "渗透探伤（PT）",
+        "壁厚测量"
+      ],
+      "recommended_interval": "发现裂纹立即评估；每6个月定期焊缝检查",
+      "maintenance_actions": [
+        "磁粉探伤和超声检测确认裂纹程度",
+        "制定裂纹修复方案（打磨补焊/加强板加固）",
+        "修复后进行无损检测验证",
+        "加密后续检查频率"
+      ],
+      "risk_level": "Critical",
+      "shutdown_evaluation_conditions": [
+        "裂纹深度超过壁厚50%",
+        "裂纹快速扩展",
+        "塔筒倾斜或位移"
+      ],
+      "safety_notes": [
+        "塔筒裂纹是重大结构安全隐患，必须立即评估",
+        "人员不得停留在塔筒裂纹下方",
+        "补焊必须由具备资质的焊工执行"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/fault_cases/tower_crack_detection.md"
+      ]
+    },
+    {
+      "id": "cable_twist",
+      "component": "Cable",
+      "symptom": "扭缆",
+      "fault_mode": "电缆过度扭转",
+      "possible_causes": [
+        "偏航旋转累积导致电缆扭转超过允许圈数",
+        "偏航解缆功能失效",
+        "偏航计数器故障",
+        "电缆悬垂设计不合理"
+      ],
+      "accompanying_symptoms": [
+        "偏航角度大",
+        "电缆外观变形"
+      ],
+      "escalates_to": {
+        "fault": "电缆断裂",
+        "condition": "扭转超过电缆允许极限且未解缆"
+      },
+      "mitigated_by": [
+        "执行解缆操作",
+        "检查偏航计数器",
+        "电缆更换"
+      ],
+      "inspection_items": [
+        "偏航累积角度",
+        "电缆外观（变形、磨损）",
+        "偏航解缆功能测试",
+        "偏航计数器校验"
+      ],
+      "inspection_methods": [
+        "目视检查电缆状态",
+        "SCADA偏航角度分析",
+        "解缆功能测试"
+      ],
+      "recommended_interval": "每季度检查偏航解缆功能；偏航角度超限时立即解缆",
+      "maintenance_actions": [
+        "执行偏航解缆操作",
+        "偏航计数器校验",
+        "检查电缆有无损伤",
+        "优化偏航解缆策略参数"
+      ],
+      "risk_level": "Medium",
+      "shutdown_evaluation_conditions": [
+        "扭缆接近电缆允许极限",
+        "电缆出现明显损伤",
+        "偏航解缆功能失效"
+      ],
+      "safety_notes": [
+        "解缆操作需确认机舱内安全",
+        "电缆损伤需专业人员评估",
+        "不得在扭缆严重时远程偏航"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/fault_cases/cable_twist.md"
+      ]
+    },
+    {
+      "id": "transformer_overtemperature",
+      "component": "Transformer",
+      "symptom": "箱变过温",
+      "fault_mode": "变压器热过载",
+      "possible_causes": [
+        "负荷过大超过额定容量",
+        "冷却系统故障",
+        "绝缘油劣化导致散热能力下降",
+        "环境温度过高"
+      ],
+      "accompanying_symptoms": [
+        "绝缘油温升",
+        "负荷电流偏大"
+      ],
+      "escalates_to": {
+        "fault": "变压器绝缘击穿",
+        "condition": "绕组温度超过绝缘等级允许值"
+      },
+      "mitigated_by": [
+        "降低负荷",
+        "冷却系统维修",
+        "绝缘油更换"
+      ],
+      "inspection_items": [
+        "绕组温度",
+        "油温",
+        "负荷电流",
+        "冷却系统状态",
+        "绝缘油品质"
+      ],
+      "inspection_methods": [
+        "红外热成像",
+        "油样分析",
+        "SCADA温度趋势",
+        "冷却系统巡检"
+      ],
+      "recommended_interval": "过温报警后立即检查；处理后7天复检",
+      "maintenance_actions": [
+        "油样分析检测特征气体（乙炔/氢气）",
+        "检查冷却系统并修复",
+        "检查负荷分配是否均衡",
+        "必要时降低负荷运行"
+      ],
+      "risk_level": "Critical",
+      "shutdown_evaluation_conditions": [
+        "绕组温度超过绝缘等级允许值",
+        "绝缘油闪点下降",
+        "出现气体继电器动作"
+      ],
+      "safety_notes": [
+        "变压器涉及高压，必须由持证人员操作",
+        "油样检测需关注特征气体（乙炔、氢气等）",
+        "不得绕过温度保护继续运行"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/fault_cases/transformer_overtemp.md"
+      ]
+    },
+    {
+      "id": "cooling_system_blockage",
+      "component": "Cooling",
+      "symptom": "散热器堵塞",
+      "fault_mode": "冷却效率退化",
+      "possible_causes": [
+        "散热翅片积灰或杂物堵塞",
+        "冷却液不足或变质",
+        "冷却风扇故障",
+        "冷却管路堵塞"
+      ],
+      "accompanying_symptoms": [
+        "多个系统温度偏高",
+        "冷却液温差减小"
+      ],
+      "escalates_to": {
+        "fault": "设备过热停机",
+        "condition": "冷却完全失效导致设备达到保护阈值"
+      },
+      "mitigated_by": [
+        "散热器清洁",
+        "冷却液更换",
+        "风扇维修"
+      ],
+      "inspection_items": [
+        "散热器清洁度",
+        "冷却液液位和品质",
+        "冷却风扇运行状态",
+        "进出液温差"
+      ],
+      "inspection_methods": [
+        "目视检查散热器",
+        "冷却液检测",
+        "风扇运行测试",
+        "红外热成像"
+      ],
+      "recommended_interval": "每季度清洁散热器；环境恶劣时增加频率",
+      "maintenance_actions": [
+        "散热器翅片清洁",
+        "检查并补充冷却液",
+        "检查冷却风扇和管路",
+        "更换变质的冷却液"
+      ],
+      "risk_level": "Medium",
+      "shutdown_evaluation_conditions": [
+        "冷却系统完全失效",
+        "多个关联设备温度超限",
+        "冷却液大量泄漏"
+      ],
+      "safety_notes": [
+        "冷却液属化学品，需按规程处置",
+        "高温冷却系统维修需防烫伤",
+        "电气设备冷却系统维修需停电隔离"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/fault_cases/cooling_system_blockage.md"
+      ]
+    },
+    {
+      "id": "brake_pad_wear",
+      "component": "Brake",
+      "symptom": "机械制动器磨损",
+      "fault_mode": "制动衬片磨损超限",
+      "possible_causes": [
+        "正常磨损累积",
+        "频繁紧急制动",
+        "制动盘表面不平导致偏磨",
+        "制动器调整不当"
+      ],
+      "accompanying_symptoms": [
+        "制动距离增大",
+        "制动时异响"
+      ],
+      "escalates_to": {
+        "fault": "制动失效",
+        "condition": "制动衬片磨损至钢背且制动距离超限"
+      },
+      "mitigated_by": [
+        "制动衬片更换",
+        "制动器调整"
+      ],
+      "inspection_items": [
+        "制动衬片厚度",
+        "制动盘表面状态",
+        "制动间隙",
+        "制动力矩"
+      ],
+      "inspection_methods": [
+        "目视检查衬片厚度",
+        "制动力矩测试",
+        "制动盘表面检查"
+      ],
+      "recommended_interval": "每6个月检查制动衬片；厚度<50%时安排更换",
+      "maintenance_actions": [
+        "更换磨损制动衬片",
+        "制动力矩测试验证",
+        "检查制动盘表面",
+        "调整制动间隙"
+      ],
+      "risk_level": "High",
+      "shutdown_evaluation_conditions": [
+        "制动衬片磨损至钢背",
+        "制动力矩不达标",
+        "制动盘严重磨损或裂纹"
+      ],
+      "safety_notes": [
+        "制动系统是最后安全防线，衬片磨损超限必须更换",
+        "制动器维修需确认机组处于安全状态",
+        "不得延迟High级制动系统维修"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/fault_cases/brake_pad_wear.md"
+      ]
+    },
+    {
+      "id": "power_curve_abnormal",
+      "component": "SCADA",
+      "symptom": "功率曲线异常",
+      "fault_mode": "发电效率偏离额定",
+      "possible_causes": [
+        "风速仪或风向数据异常",
+        "限功率或降载运行",
+        "偏航误差过大",
+        "叶片污染或气动效率下降",
+        "变流器或发电机输出受限"
+      ],
+      "accompanying_symptoms": [
+        "同风段功率偏差",
+        "报警记录增多"
+      ],
+      "escalates_to": {
+        "fault": "发电量持续损失",
+        "condition": "功率偏差>5%持续超过14天未排查"
+      },
+      "mitigated_by": [
+        "数据校验",
+        "设备排查",
+        "叶片清洗"
+      ],
+      "inspection_items": [
+        "同风速区间功率",
+        "风速仪状态",
+        "限功率记录",
+        "偏航误差",
+        "报警时间窗口"
+      ],
+      "inspection_methods": [
+        "SCADA数据对比",
+        "同排机组横向比较",
+        "功率曲线趋势分析"
+      ],
+      "recommended_interval": "发现异常后先复核数据质量；连续3天异常应建立分析工单",
+      "maintenance_actions": [
+        "同排机组横向比较确认功率偏差",
+        "风速仪校准检查",
+        "结合报警记录判断设备侧排查方向",
+        "必要时安排叶片清洗"
+      ],
+      "risk_level": "Medium",
+      "shutdown_evaluation_conditions": [
+        "功率异常伴随关键系统报警",
+        "输出波动影响并网安全",
+        "存在明显机械或电气异常趋势"
+      ],
+      "safety_notes": [
+        "并网相关判断需遵守调度和场站规程",
+        "不要直接建议并网切换或保护投退",
+        "数据异常需先确认测量链路可靠性"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/scada_rules/power_curve_alarm.md"
+      ]
+    },
+    {
+      "id": "vibration_spectrum_abnormal",
+      "component": "Vibration",
+      "symptom": "振动频谱异常",
+      "fault_mode": "机械振动特征变化",
+      "possible_causes": [
+        "轴承损伤（内外圈、滚动体特征频率出现）",
+        "齿轮啮合异常（啮合频率及边频）",
+        "结构共振",
+        "对中不良"
+      ],
+      "accompanying_symptoms": [
+        "温度升高",
+        "油样金属含量增加"
+      ],
+      "escalates_to": {
+        "fault": "设备机械故障",
+        "condition": "振动值超过ISO 10816限值且持续上升"
+      },
+      "mitigated_by": [
+        "振动专项诊断",
+        "加密监测",
+        "计划性维修"
+      ],
+      "inspection_items": [
+        "振动总值趋势",
+        "特征频率分量",
+        "振动相位",
+        "温度关联趋势"
+      ],
+      "inspection_methods": [
+        "振动频谱分析",
+        "包络分析",
+        "时域波形分析",
+        "SCADA趋势对比"
+      ],
+      "recommended_interval": "异常初现7天内诊断；跟踪频率视严重程度调整",
+      "maintenance_actions": [
+        "振动频谱分析和包络分析",
+        "根据诊断结论制定维修计划",
+        "加密监测频率",
+        "必要时安排停机检查"
+      ],
+      "risk_level": "High",
+      "shutdown_evaluation_conditions": [
+        "振动值超过ISO 10816限值",
+        "振动快速上升趋势",
+        "振动异常伴随温度和电流异常"
+      ],
+      "safety_notes": [
+        "振动监测数据是机械故障的关键指标",
+        "不得屏蔽振动保护",
+        "Critical振动报警应立即停机"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/vibration_analysis/vibration_spectrum_diagnosis.md"
+      ]
+    },
+    {
+      "id": "thermal_imaging_anomaly",
+      "component": "Thermal",
+      "symptom": "热成像异常热点",
+      "fault_mode": "局部过热",
+      "possible_causes": [
+        "电气连接松动导致接触电阻增大",
+        "轴承过热",
+        "绝缘局部放电",
+        "冷却不足"
+      ],
+      "accompanying_symptoms": [
+        "温度梯度异常",
+        "红外图像局部亮区"
+      ],
+      "escalates_to": {
+        "fault": "设备烧损或火灾",
+        "condition": "热点温度超过材料允许温度且持续升温"
+      },
+      "mitigated_by": [
+        "紧固连接",
+        "改善冷却",
+        "绝缘处理"
+      ],
+      "inspection_items": [
+        "热点温度和温差",
+        "热点位置（接线端子/轴承/绕组）",
+        "温度变化趋势",
+        "环境温度参照"
+      ],
+      "inspection_methods": [
+        "红外热成像",
+        "温度趋势对比",
+        "电气连接检查"
+      ],
+      "recommended_interval": "发现异常热点后7天内排查；定期热成像巡检每6个月",
+      "maintenance_actions": [
+        "红外热成像确认热点位置和温度",
+        "紧固过热的电气连接",
+        "检查冷却系统",
+        "处理后验证温度恢复"
+      ],
+      "risk_level": "High",
+      "shutdown_evaluation_conditions": [
+        "热点温度超过材料允许值",
+        "温度快速上升",
+        "出现冒烟或烧蚀痕迹"
+      ],
+      "safety_notes": [
+        "电气热点检查需停电隔离",
+        "热成像检测需注意安全距离",
+        "高温部位需防烫伤"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/thermal_images/thermal_imaging_wiring_box.md"
+      ]
+    },
+    {
+      "id": "uav_blade_inspection_anomaly",
+      "component": "UAV",
+      "symptom": "无人机巡检发现叶片异常",
+      "fault_mode": "叶片表面缺陷",
+      "possible_causes": [
+        "叶片前缘侵蚀",
+        "叶片表面裂纹",
+        "雷击损伤",
+        "叶片涂层脱落"
+      ],
+      "accompanying_symptoms": [
+        "可见表面损伤",
+        "涂层变色"
+      ],
+      "escalates_to": {
+        "fault": "叶片结构损伤",
+        "condition": "表面缺陷深入结构层未处置"
+      },
+      "mitigated_by": [
+        "叶片修补",
+        "前缘保护",
+        "定期巡检"
+      ],
+      "inspection_items": [
+        "损伤位置和尺寸",
+        "损伤类型（裂纹/侵蚀/脱落）",
+        "损伤深度",
+        "损伤扩展趋势（对比历史照片）"
+      ],
+      "inspection_methods": [
+        "无人机高清摄影",
+        "AI辅助缺陷识别",
+        "人工复核确认"
+      ],
+      "recommended_interval": "每6个月无人机巡检；发现缺陷后30天内复检",
+      "maintenance_actions": [
+        "标记缺陷位置并记录尺寸",
+        "AI辅助缺陷识别评估损伤等级",
+        "安排修复窗口",
+        "更新巡检记录台账"
+      ],
+      "risk_level": "Medium",
+      "shutdown_evaluation_conditions": [
+        "缺陷深入结构层",
+        "缺陷快速扩展",
+        "大面积涂层脱落"
+      ],
+      "safety_notes": [
+        "无人机巡检需遵守空域管理规定",
+        "巡检结果需人工复核确认",
+        "高空叶片检查需注意安全距离"
+      ],
+      "evidence_sources": [
+        "beifeng/knowledge/knowledge_base/uav_inspection/uav_blade_inspection_guide.md"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "site_id": "string",
+  "timestamp": "string",
+  "wind_speed": "number",
+  "wind_direction": "number",
+  "temperature": "number",
+  "humidity": "number",
+  "lightning_alert": "boolean",
+  "icing_risk": "string",
+  "notes": "string"
+}
+

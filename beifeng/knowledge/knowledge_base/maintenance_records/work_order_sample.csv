@@ -1,0 +1,3 @@
+work_order,equipment,domain,summary
+WO-001,blade,Blade,叶片裂纹复检并记录裂纹扩展方向
+WO-002,gearbox,Gearbox,齿轮箱油温偏高后更换滤芯并复测振动

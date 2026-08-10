@@ -1,0 +1,10 @@
+{
+  "inspection_id": "string",
+  "turbine_id": "string",
+  "blade_id": "string",
+  "media_type": "image_or_video",
+  "defect_type": "string",
+  "defect_location": "string",
+  "confidence": "number"
+}
+

@@ -1,0 +1,10 @@
+{
+  "knowledge_base": "beifeng/knowledge/knowledge_base",
+  "knowledge_graph": "beifeng/knowledge/knowledge_graph/wind_fault_graph.json",
+  "rag_db": "beifeng/data/wind.sqlite",
+  "reports_dir": "beifeng/reports/generated",
+  "templates_dir": "beifeng/reports/templates",
+  "memory_dir": "beifeng/memory",
+  "skills_dir": "beifeng/skills"
+}
+

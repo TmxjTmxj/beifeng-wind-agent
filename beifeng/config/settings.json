@@ -1,0 +1,29 @@
+{
+  "agent.name": "BeiFeng Wind O&M Agent",
+  "agent.version": "1.0",
+  "credentials.file": "beifeng/config/secrets.json",
+  "credentials.mode": "local-file",
+  "frontend.enabled": false,
+  "frontend.path": "apps/desktop",
+  "model.api_key_env": "DEEPSEEK_API_KEY",
+  "model.base_url": "${DEEPSEEK_BASE_URL}",
+  "model.name": "Ali-dashscope/Qwen3-Coder-Next",
+  "model.provider": "deepseek-compatible",
+  "paths.connectors": "beifeng/connectors",
+  "paths.evals": "beifeng/evals",
+  "paths.knowledge_base": "beifeng/knowledge/knowledge_base",
+  "paths.knowledge_graph": "beifeng/knowledge/knowledge_graph/wind_fault_graph.json",
+  "paths.memory": "beifeng/memory",
+  "paths.reports": "beifeng/reports/generated",
+  "paths.skills": "beifeng/skills",
+  "rag.db_path": "beifeng/data/wind.sqlite",
+  "rag.service_url": "http://127.0.0.1:8787",
+  "safety.forbidden_actions": [
+    "未经授权远程停机",
+    "未经授权远程复位",
+    "绕过安全联锁",
+    "替代现场工程师判断"
+  ],
+  "safety.require_human_confirmation": true,
+  "workspace.root": "."
+}

@@ -1,0 +1,12 @@
+{
+  "turbine_id": "string",
+  "timestamp": "string",
+  "wind_speed": "number",
+  "power": "number",
+  "rotor_speed": "number",
+  "gearbox_oil_temp": "number",
+  "generator_temp": "number",
+  "vibration": "number",
+  "alarm_codes": []
+}
+

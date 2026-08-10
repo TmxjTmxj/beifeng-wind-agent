@@ -1,0 +1,9 @@
+{
+  "work_order_id": "string",
+  "turbine_id": "string",
+  "fault_type": "string",
+  "status": "string",
+  "created_at": "string",
+  "maintenance_action": "string"
+}
+

@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "description": "Lightweight wind fault graph schema. Each entry represents component -> symptom -> cause -> inspection -> maintenance_action -> safety_note knowledge.",
+  "required_fields": [
+    "id",
+    "component",
+    "symptom",
+    "possible_causes",
+    "inspection_items",
+    "inspection_methods",
+    "recommended_interval",
+    "maintenance_actions",
+    "risk_level",
+    "shutdown_evaluation_conditions",
+    "safety_notes",
+    "evidence_sources"
+  ],
+  "field_definitions": {
+    "id": "Stable identifier for the fault graph entry.",
+    "component": "Wind turbine component or subsystem, such as Blade, Gearbox, Yaw, SCADA, Generator.",
+    "symptom": "Observed symptom or fault phenomenon.",
+    "possible_causes": "Likely causes to verify, not final diagnosis.",
+    "inspection_items": "What should be checked or measured.",
+    "inspection_methods": "Recommended inspection methods.",
+    "recommended_interval": "Suggested re-check interval when applicable.",
+    "maintenance_actions": "Maintenance recommendations that still require field confirmation.",
+    "risk_level": "Low, Medium, High, or Critical.",
+    "shutdown_evaluation_conditions": "Conditions that require shutdown evaluation rather than direct remote shutdown advice.",
+    "safety_notes": "Safety notes and human confirmation requirements.",
+    "evidence_sources": "Local or public metadata sources supporting this entry."
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://beifeng-agent.local/schemas/settings.schema.json",
+  "title": "BeiFeng Agent Settings",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "workspace.root",
+    "agent.name",
+    "agent.version",
+    "model.provider",
+    "model.name",
+    "model.base_url",
+    "model.api_key_env",
+    "rag.service_url",
+    "rag.db_path",
+    "paths.knowledge_base",
+    "paths.knowledge_graph",
+    "paths.memory",
+    "paths.reports",
+    "paths.skills",
+    "paths.connectors",
+    "paths.evals",
+    "frontend.enabled",
+    "frontend.path",
+    "safety.require_human_confirmation",
+    "safety.forbidden_actions"
+  ],
+  "properties": {
+    "workspace.root": {
+      "type": "string",
+      "description": "Absolute workspace root for the main BeiFeng-Agent project."
+    },
+    "agent.name": {
+      "type": "string",
+      "description": "Human-readable agent name."
+    },
+    "agent.version": {
+      "type": "string",
+      "description": "Configuration version for the BeiFeng Agent workspace."
+    },
+    "model.provider": {
+      "type": "string",
+      "description": "Model provider family or compatibility mode."
+    },
+    "model.name": {
+      "type": "string",
+      "description": "Default model name used by scripts and agent launchers."
+    },
+    "model.base_url": {
+      "type": "string",
+      "description": "Model base URL or environment-variable placeholder such as ${DEEPSEEK_BASE_URL}."
+    },
+    "model.api_key_env": {
+      "type": "string",
+      "description": "Environment variable name that stores the model API key."
+    },
+    "rag.service_url": {
+      "type": "string",
+      "description": "Local RAG service URL used by the agent and evaluation scripts."
+    },
+    "rag.db_path": {
+      "type": "string",
+      "description": "SQLite database path for the RAG index, relative to workspace.root unless absolute."
+    },
+    "paths.knowledge_base": {
+      "type": "string",
+      "description": "Wind O&M knowledge-base directory."
+    },
+    "paths.knowledge_graph": {
+      "type": "string",
+      "description": "Fault graph JSON path."
+    },
+    "paths.memory": {
+      "type": "string",
+      "description": "Runtime memory directory for turbine profiles, history, and report memory."
+    },
+    "paths.reports": {
+      "type": "string",
+      "description": "Generated report output directory."
+    },
+    "paths.skills": {
+      "type": "string",
+      "description": "BeiFeng business skill directory."
+    },
+    "paths.connectors": {
+      "type": "string",
+      "description": "BeiFeng connector schema and documentation directory."
+    },
+    "paths.evals": {
+      "type": "string",
+      "description": "Benchmark and regression evaluation directory."
+    },
+    "frontend.enabled": {
+      "type": "boolean",
+      "description": "Whether the future desktop frontend is active."
+    },
+    "frontend.path": {
+      "type": "string",
+      "description": "Reserved desktop frontend path."
+    },
+    "safety.require_human_confirmation": {
+      "type": "boolean",
+      "description": "Require human confirmation for safety-sensitive workflows."
+    },
+    "safety.forbidden_actions": {
+      "type": "array",
+      "description": "Actions the agent must not perform or recommend as autonomous operations.",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "description": "Wind Knowledge Hub domain schema for wind farm operations and maintenance knowledge.",
+  "domains": [
+    {
+      "id": "Blade",
+      "label": "Blade",
+      "description": "Blade inspection, damage, cracks, leading edge erosion, lightning damage, UAV blade inspection."
+    },
+    {
+      "id": "Gearbox",
+      "label": "Gearbox",
+      "description": "Gearbox oil temperature, bearing faults, gear wear, lubrication, vibration and drivetrain diagnosis."
+    },
+    {
+      "id": "Generator",
+      "label": "Generator",
+      "description": "Generator electrical and mechanical health, bearing temperature, insulation, current and vibration issues."
+    },
+    {
+      "id": "Converter",
+      "label": "Converter",
+      "description": "Converter, inverter, rectifier, cooling, grid-side and machine-side power electronics."
+    },
+    {
+      "id": "Yaw",
+      "label": "Yaw",
+      "description": "Yaw drive, yaw motor, yaw bearing, yaw brake and wind alignment issues."
+    },
+    {
+      "id": "Pitch",
+      "label": "Pitch",
+      "description": "Pitch drive, pitch motor, pitch battery, pitch communication and blade angle control issues."
+    },
+    {
+      "id": "Hydraulic",
+      "label": "Hydraulic",
+      "description": "Hydraulic pump, pressure, leakage, brake hydraulic system and oil condition."
+    },
+    {
+      "id": "Tower",
+      "label": "Tower",
+      "description": "Tower structure, bolts, welds, corrosion, climbing safety and tower vibration."
+    },
+    {
+      "id": "Foundation",
+      "label": "Foundation",
+      "description": "Foundation settlement, cracks, anchor bolts, grout and civil structure issues."
+    },
+    {
+      "id": "SCADA",
+      "label": "SCADA",
+      "description": "SCADA alarms, operating data, wind speed, power curve, temperature, current and voltage trends."
+    },
+    {
+      "id": "Safety",
+      "label": "Safety",
+      "description": "Electrical safety, lifting, grid connection, working at height, lockout, fire and human safety rules."
+    },
+    {
+      "id": "Maintenance",
+      "label": "Maintenance",
+      "description": "Maintenance plans, work orders, spare parts, inspection schedules, defect closure and service procedures."
+    }
+  ]
+}

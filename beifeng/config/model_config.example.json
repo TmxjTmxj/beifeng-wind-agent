@@ -1,0 +1,12 @@
+{
+  "default_model": "SDU-AI/DeepSeek-V4-Flash",
+  "deepseek": {
+    "base_url_env": "DEEPSEEK_BASE_URL",
+    "api_key_env": "DEEPSEEK_API_KEY"
+  },
+  "rag": {
+    "service_url_env": "CLAW_RAG_SERVICE_URL",
+    "mock_embeddings_env": "CLAW_RAG_MOCK_PROVIDERS"
+  }
+}
+

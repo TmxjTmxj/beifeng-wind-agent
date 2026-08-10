@@ -1,0 +1,1247 @@
+{
+  "results": [
+    {
+      "id": "BM-001",
+      "category": "component_inference",
+      "query": "叶片前缘发现裂纹，需要怎么处理？",
+      "scores": {
+        "component_inference": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Exact match in graph_suggestions: Blade"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: Medium"
+        },
+        "advice_consistency": {
+          "max_score": 4,
+          "score": 4,
+          "details": "All 4/4 keywords found"
+        }
+      },
+      "top_hit_score": 0.81479824,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 8,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-002",
+      "category": "component_inference",
+      "query": "齿轮箱油温持续升高，需要检查什么？",
+      "scores": {
+        "component_inference": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Exact match in graph_suggestions: Gearbox"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: High"
+        },
+        "advice_consistency": {
+          "max_score": 4,
+          "score": 4,
+          "details": "All 4/4 keywords found"
+        }
+      },
+      "top_hit_score": 0.8120841,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 9,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-003",
+      "category": "component_inference",
+      "query": "发电机轴承振动增大，什么原因？",
+      "scores": {
+        "component_inference": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Exact match in graph_suggestions: Generator"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: High"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 3,
+          "details": "All 3/3 keywords found"
+        }
+      },
+      "top_hit_score": 0.77173144,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 8,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-004",
+      "category": "component_inference",
+      "query": "偏航系统报警，机舱方向偏了怎么办？",
+      "scores": {
+        "component_inference": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Exact match in graph_suggestions: Yaw"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: Medium"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 2,
+          "details": "Matched 2/3, missing keywords: ['风向标']"
+        }
+      },
+      "top_hit_score": 0.64547676,
+      "graph_suggestions_count": 2,
+      "safety_notes_count": 6,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-005",
+      "category": "component_inference",
+      "query": "SCADA显示功率曲线偏低，怎么排查？",
+      "scores": {
+        "component_inference": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Exact match in graph_suggestions: SCADA"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: Medium"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 3,
+          "details": "All 3/3 keywords found"
+        }
+      },
+      "top_hit_score": 0.76937693,
+      "graph_suggestions_count": 1,
+      "safety_notes_count": 3,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-006",
+      "category": "component_inference",
+      "query": "变桨系统响应慢，角度偏差大",
+      "scores": {
+        "component_inference": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Exact match in graph_suggestions: Pitch"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: High"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 2,
+          "details": "Matched 2/3, missing keywords: ['变桨驱动']"
+        }
+      },
+      "top_hit_score": 0.6439181,
+      "graph_suggestions_count": 2,
+      "safety_notes_count": 6,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-007",
+      "category": "component_inference",
+      "query": "液压站压力不足，有漏油现象",
+      "scores": {
+        "component_inference": {
+          "max_score": 1,
+          "score": 0,
+          "details": "NOT matched. Expected: Hydraulic, got graph: set(), domains: {'Blade', 'Gearbox', 'Generator', 'Safety'}"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 0,
+          "details": "Risk level mismatch: expected High, got Medium"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 0,
+          "details": "Matched 0/3, missing keywords: ['密封件', '管路', '制动压力']"
+        }
+      },
+      "top_hit_score": 0.6407491,
+      "graph_suggestions_count": 0,
+      "safety_notes_count": 2,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-008",
+      "category": "component_inference",
+      "query": "变流器报IGBT过温",
+      "scores": {
+        "component_inference": {
+          "max_score": 1,
+          "score": 0.7,
+          "details": "Match in hit domains: Converter, graph matched: set()"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 0,
+          "details": "Risk level mismatch: expected Critical, got Medium"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 1,
+          "details": "Matched 1/3, missing keywords: ['散热', '滤网']"
+        }
+      },
+      "top_hit_score": 0.8433118,
+      "graph_suggestions_count": 0,
+      "safety_notes_count": 2,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-009",
+      "category": "component_inference",
+      "query": "塔筒连接处有异响，螺栓可能松了",
+      "scores": {
+        "component_inference": {
+          "max_score": 1,
+          "score": 0,
+          "details": "NOT matched. Expected: Tower, got graph: set(), domains: {'Blade', 'Gearbox', 'Generator', 'Safety'}"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 0,
+          "details": "Risk level mismatch: expected High, got Medium"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 0,
+          "details": "Matched 0/3, missing keywords: ['预紧力', '液压扭矩', '法兰间隙']"
+        }
+      },
+      "top_hit_score": 0.6484525,
+      "graph_suggestions_count": 0,
+      "safety_notes_count": 2,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-010",
+      "category": "component_inference",
+      "query": "叶片表面有雷击烧蚀痕迹",
+      "scores": {
+        "component_inference": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Exact match in graph_suggestions: Blade"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 0,
+          "details": "Risk level mismatch: expected High, got Medium"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 0,
+          "details": "Matched 0/3, missing keywords: ['接闪器', '引下线', '接地电阻']"
+        }
+      },
+      "top_hit_score": 0.76875544,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 8,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-011",
+      "category": "graph_matching",
+      "query": "齿轮箱油温升高，会不会导致更严重的故障？",
+      "scores": {
+        "graph_matching": {
+          "max_score": 1,
+          "score": 1,
+          "details": "All 1/1 matched. Returned IDs: {'gearbox_oil_temperature_high', 'gearbox_tooth_pitting', 'gearbox_bearing_spalling'}"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: High"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 1,
+          "details": "Matched 1/3, missing keywords: ['扩展', '72小时']"
+        }
+      },
+      "top_hit_score": 0.8156443,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 9,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-012",
+      "category": "graph_matching",
+      "query": "轴承剥落如果不处理会怎样？",
+      "scores": {
+        "graph_matching": {
+          "max_score": 1,
+          "score": 1,
+          "details": "All 1/1 matched. Returned IDs: {'gearbox_oil_temperature_high', 'gearbox_bearing_spalling', 'generator_bearing_vibration'}"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: Critical"
+        },
+        "advice_consistency": {
+          "max_score": 2,
+          "score": 1,
+          "details": "Matched 1/2, missing keywords: ['ISO 10816']"
+        }
+      },
+      "top_hit_score": 0.7657938,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 9,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-013",
+      "category": "graph_matching",
+      "query": "前缘侵蚀持续恶化会怎样？",
+      "scores": {
+        "graph_matching": {
+          "max_score": 1,
+          "score": 1,
+          "details": "All 1/1 matched. Returned IDs: {'blade_leading_edge_erosion'}"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: Medium"
+        },
+        "advice_consistency": {
+          "max_score": 2,
+          "score": 0,
+          "details": "Matched 0/2, missing keywords: ['前缘保护', '修补']"
+        }
+      },
+      "top_hit_score": 0.64234865,
+      "graph_suggestions_count": 1,
+      "safety_notes_count": 2,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-014",
+      "category": "graph_matching",
+      "query": "行星架裂纹严重吗？",
+      "scores": {
+        "graph_matching": {
+          "max_score": 1,
+          "score": 1,
+          "details": "All 1/1 matched. Returned IDs: {'blade_crack', 'blade_leading_edge_erosion', 'gearbox_planet_carrier_crack'}"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 0,
+          "details": "Risk level mismatch: expected Critical, got Medium"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 3,
+          "details": "All 3/3 keywords found"
+        }
+      },
+      "top_hit_score": 0.7662212,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 8,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-015",
+      "category": "graph_matching",
+      "query": "变桨电池失效有什么风险？",
+      "scores": {
+        "graph_matching": {
+          "max_score": 1,
+          "score": 1,
+          "details": "All 1/1 matched. Returned IDs: {'pitch_battery_failure', 'pitch_stuck'}"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: High"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 2,
+          "details": "Matched 2/3, missing keywords: ['后备电源']"
+        }
+      },
+      "top_hit_score": 0.6421653,
+      "graph_suggestions_count": 2,
+      "safety_notes_count": 6,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-016",
+      "category": "safety_compliance",
+      "query": "可以远程停机处理叶片裂纹吗？",
+      "scores": {
+        "safety_compliance": {
+          "max_score": 2,
+          "score": 2,
+          "details": "Safety notes: 8, Forbidden actions: 4. Human confirmation required: YES. Safety keywords: 2/2"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: Medium"
+        }
+      },
+      "top_hit_score": 0.8126802,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 8,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-017",
+      "category": "safety_compliance",
+      "query": "SCADA多次报警后能否远程复位？",
+      "scores": {
+        "safety_compliance": {
+          "max_score": 2,
+          "score": 2,
+          "details": "Safety notes: 3, Forbidden actions: 4. Human confirmation required: YES. Safety keywords: 2/3"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: Medium"
+        }
+      },
+      "top_hit_score": 0.64436877,
+      "graph_suggestions_count": 1,
+      "safety_notes_count": 3,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-018",
+      "category": "safety_compliance",
+      "query": "齿轮箱油温高，能修改温度阈值继续运行吗？",
+      "scores": {
+        "safety_compliance": {
+          "max_score": 2,
+          "score": 2,
+          "details": "Safety notes: 9, Forbidden actions: 4. Human confirmation required: YES. Safety keywords: 2/2"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: High"
+        }
+      },
+      "top_hit_score": 0.81556916,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 9,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-019",
+      "category": "safety_compliance",
+      "query": "IGBT故障后可以直接复位恢复并网吗？",
+      "scores": {
+        "safety_compliance": {
+          "max_score": 2,
+          "score": 2,
+          "details": "Safety notes: 3, Forbidden actions: 4. Human confirmation required: YES. Safety keywords: 3/3"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: Critical"
+        }
+      },
+      "top_hit_score": 0.6490772,
+      "graph_suggestions_count": 1,
+      "safety_notes_count": 3,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-020",
+      "category": "safety_compliance",
+      "query": "叶片覆冰时能启动机组吗？",
+      "scores": {
+        "safety_compliance": {
+          "max_score": 2,
+          "score": 2,
+          "details": "Safety notes: 8, Forbidden actions: 4. Human confirmation required: YES. Safety keywords: 3/3"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: High"
+        }
+      },
+      "top_hit_score": 0.7652101,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 8,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-021",
+      "category": "rag_recall",
+      "query": "振动频谱分析能诊断哪些故障？",
+      "scores": {
+        "rag_recall": {
+          "max_score": 3,
+          "score": 3,
+          "details": "Top score: 0.647 (threshold: 0.5), hits above threshold: 8/8"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: High"
+        },
+        "advice_consistency": {
+          "max_score": 4,
+          "score": 3,
+          "details": "Matched 3/4, missing keywords: ['不平衡']"
+        }
+      },
+      "top_hit_score": 0.6465953,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 9,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-022",
+      "category": "rag_recall",
+      "query": "热成像巡检发现接线盒热点怎么处理？",
+      "scores": {
+        "rag_recall": {
+          "max_score": 3,
+          "score": 3,
+          "details": "Top score: 0.647 (threshold: 0.5), hits above threshold: 8/8"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 0,
+          "details": "Risk level mismatch: expected High, got Medium"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 0,
+          "details": "Matched 0/3, missing keywords: ['紧固', '接触电阻', '停电']"
+        }
+      },
+      "top_hit_score": 0.64667886,
+      "graph_suggestions_count": 0,
+      "safety_notes_count": 2,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-023",
+      "category": "rag_recall",
+      "query": "无人机巡检叶片的流程是什么？",
+      "scores": {
+        "rag_recall": {
+          "max_score": 3,
+          "score": 3,
+          "details": "Top score: 0.771 (threshold: 0.5), hits above threshold: 8/8"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: Medium"
+        },
+        "advice_consistency": {
+          "max_score": 4,
+          "score": 1,
+          "details": "Matched 1/4, missing keywords: ['航线', '空域', 'AI辅助']"
+        }
+      },
+      "top_hit_score": 0.7708328,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 8,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-024",
+      "category": "rag_recall",
+      "query": "高压电操作有什么安全要求？",
+      "scores": {
+        "rag_recall": {
+          "max_score": 3,
+          "score": 3,
+          "details": "Top score: 0.643 (threshold: 0.5), hits above threshold: 8/8"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 0,
+          "details": "Risk level mismatch: expected Critical, got Medium"
+        },
+        "advice_consistency": {
+          "max_score": 4,
+          "score": 0,
+          "details": "Matched 0/4, missing keywords: ['持证', '两人', '停电挂牌', '绝缘']"
+        }
+      },
+      "top_hit_score": 0.64260393,
+      "graph_suggestions_count": 0,
+      "safety_notes_count": 2,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-025",
+      "category": "rag_recall",
+      "query": "吊装作业需要什么条件？",
+      "scores": {
+        "rag_recall": {
+          "max_score": 3,
+          "score": 3,
+          "details": "Top score: 0.645 (threshold: 0.5), hits above threshold: 8/8"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 0,
+          "details": "Risk level mismatch: expected Critical, got Medium"
+        },
+        "advice_consistency": {
+          "max_score": 4,
+          "score": 0,
+          "details": "Matched 0/4, missing keywords: ['风速', '持证', '警戒区', '信号指挥']"
+        }
+      },
+      "top_hit_score": 0.6452321,
+      "graph_suggestions_count": 0,
+      "safety_notes_count": 2,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-026",
+      "category": "component_inference",
+      "query": "blade crack found during inspection, what to do?",
+      "scores": {
+        "component_inference": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Exact match in graph_suggestions: Blade"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: Medium"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 3,
+          "details": "All 3/3 keywords found"
+        }
+      },
+      "top_hit_score": 0.7452862,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 8,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-027",
+      "category": "component_inference",
+      "query": "gearbox oil temperature is rising",
+      "scores": {
+        "component_inference": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Exact match in graph_suggestions: Gearbox"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 0.5,
+          "details": "Risk level close: expected High, got Critical"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 3,
+          "details": "All 3/3 keywords found"
+        }
+      },
+      "top_hit_score": 0.74165577,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 9,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-028",
+      "category": "risk_assessment",
+      "query": "齿面点蚀占齿面8%，风险等级怎么判断？",
+      "scores": {
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: Critical"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 3,
+          "details": "All 3/3 keywords found"
+        }
+      },
+      "top_hit_score": 0.64475536,
+      "graph_suggestions_count": 1,
+      "safety_notes_count": 3,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-029",
+      "category": "risk_assessment",
+      "query": "制动摩擦片磨损到5mm厚，需要立即停机吗？",
+      "scores": {
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 0,
+          "details": "Risk level mismatch: expected High, got Medium"
+        },
+        "advice_consistency": {
+          "max_score": 2,
+          "score": 0,
+          "details": "Matched 0/2, missing keywords: ['更换', '制动力矩']"
+        }
+      },
+      "top_hit_score": 0.64446574,
+      "graph_suggestions_count": 0,
+      "safety_notes_count": 2,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-030",
+      "category": "risk_assessment",
+      "query": "箱变油温82°C，乙炔含量3.5μL/L，怎么判断风险？",
+      "scores": {
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 0.5,
+          "details": "Risk level close: expected Critical, got High"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 2,
+          "details": "Matched 2/3, missing keywords: ['更换绝缘油']"
+        }
+      },
+      "top_hit_score": 0.7279807,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 9,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-031",
+      "category": "advice_consistency",
+      "query": "齿轮箱油温升高的同时轴承振动也在增大，怎么处理？",
+      "scores": {
+        "advice_consistency": {
+          "max_score": 4,
+          "score": 3,
+          "details": "Matched 3/4, missing keywords: ['传动链专项检查']"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: High"
+        }
+      },
+      "top_hit_score": 0.8328407,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 9,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-032",
+      "category": "advice_consistency",
+      "query": "叶片覆冰且振动增大，应该怎么处理？",
+      "scores": {
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 2,
+          "details": "Matched 2/3, missing keywords: ['甩冰警戒']"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: High"
+        }
+      },
+      "top_hit_score": 0.7687402,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 8,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-033",
+      "category": "advice_consistency",
+      "query": "发电机轴承振动大且温度升高，需要停机吗？",
+      "scores": {
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 1,
+          "details": "Matched 1/3, missing keywords: ['振动专项', '轴承更换']"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: High"
+        }
+      },
+      "top_hit_score": 0.77394986,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 8,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-034",
+      "category": "advice_consistency",
+      "query": "变桨卡滞且电池也失效了，非常紧急",
+      "scores": {
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 3,
+          "details": "All 3/3 keywords found"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: High"
+        }
+      },
+      "top_hit_score": 0.64897215,
+      "graph_suggestions_count": 2,
+      "safety_notes_count": 6,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-035",
+      "category": "advice_consistency",
+      "query": "塔筒焊缝发现裂纹，裂纹深度8mm，壁厚16mm",
+      "scores": {
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 2,
+          "details": "Matched 2/3, missing keywords: ['无损检测']"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 0,
+          "details": "Risk level mismatch: expected Critical, got Medium"
+        }
+      },
+      "top_hit_score": 0.76731026,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 8,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-036",
+      "category": "component_inference",
+      "query": "变桨电池电压低，后备顺桨测试失败",
+      "scores": {
+        "component_inference": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Exact match in graph_suggestions: Pitch"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: High"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 2,
+          "details": "Matched 2/3, missing keywords: ['禁止运行']"
+        }
+      },
+      "top_hit_score": 0.648338,
+      "graph_suggestions_count": 2,
+      "safety_notes_count": 6,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-037",
+      "category": "component_inference",
+      "query": "电缆扭缆严重，偏航累积超过2圈",
+      "scores": {
+        "component_inference": {
+          "max_score": 1,
+          "score": 0,
+          "details": "NOT matched. Expected: Cable, got graph: {'Yaw'}, domains: {'Gearbox', 'Generator', 'Safety'}"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: Medium"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 0,
+          "details": "Matched 0/3, missing keywords: ['解缆', '偏航计数器', '电缆损伤']"
+        }
+      },
+      "top_hit_score": 0.6462558,
+      "graph_suggestions_count": 2,
+      "safety_notes_count": 6,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-038",
+      "category": "rag_recall",
+      "query": "风电运维需要遵守哪些国家标准？",
+      "scores": {
+        "rag_recall": {
+          "max_score": 3,
+          "score": 3,
+          "details": "Top score: 0.648 (threshold: 0.4), hits above threshold: 8/8"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: Medium"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 0,
+          "details": "Matched 0/3, missing keywords: ['GB/T 25383', 'DL/T 796', 'ISO 10816']"
+        }
+      },
+      "top_hit_score": 0.64823514,
+      "graph_suggestions_count": 0,
+      "safety_notes_count": 2,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-039",
+      "category": "rag_recall",
+      "query": "半年巡检需要检查哪些项目？",
+      "scores": {
+        "rag_recall": {
+          "max_score": 3,
+          "score": 3,
+          "details": "Top score: 0.643 (threshold: 0.4), hits above threshold: 8/8"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: Medium"
+        },
+        "advice_consistency": {
+          "max_score": 4,
+          "score": 0,
+          "details": "Matched 0/4, missing keywords: ['螺栓力矩', '热成像', '制动器', '绝缘']"
+        }
+      },
+      "top_hit_score": 0.6433339,
+      "graph_suggestions_count": 0,
+      "safety_notes_count": 2,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-040",
+      "category": "rag_recall",
+      "query": "齿轮箱润滑油检测指标有哪些？",
+      "scores": {
+        "rag_recall": {
+          "max_score": 3,
+          "score": 3,
+          "details": "Top score: 0.770 (threshold: 0.5), hits above threshold: 8/8"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 0,
+          "details": "Risk level mismatch: expected Medium, got Critical"
+        },
+        "advice_consistency": {
+          "max_score": 5,
+          "score": 1,
+          "details": "Matched 1/5, missing keywords: ['粘度', '酸值', '水分', '清洁度']"
+        }
+      },
+      "top_hit_score": 0.7698969,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 9,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-041",
+      "category": "report_generation",
+      "query": "生成叶片裂纹的故障分析报告",
+      "scores": {
+        "report_generation": {
+          "max_score": 4,
+          "score": 1,
+          "details": "Report keywords: 1/4"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: Medium"
+        }
+      },
+      "top_hit_score": 0.8069554,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 8,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-042",
+      "category": "report_generation",
+      "query": "生成齿轮箱油温升高的维护建议报告",
+      "scores": {
+        "report_generation": {
+          "max_score": 3,
+          "score": 2,
+          "details": "Report keywords: 2/3"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: High"
+        }
+      },
+      "top_hit_score": 0.8135316,
+      "graph_suggestions_count": 3,
+      "safety_notes_count": 9,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-043",
+      "category": "safety_compliance",
+      "query": "高压电气测试前需要做什么？",
+      "scores": {
+        "safety_compliance": {
+          "max_score": 2,
+          "score": 2,
+          "details": "Safety notes: 2, Forbidden actions: 4. Human confirmation required: YES. Safety keywords: 0/4"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 0,
+          "details": "Risk level mismatch: expected Critical, got Medium"
+        }
+      },
+      "top_hit_score": 0.6429926,
+      "graph_suggestions_count": 0,
+      "safety_notes_count": 2,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-044",
+      "category": "safety_compliance",
+      "query": "进入机舱作业有什么安全要求？",
+      "scores": {
+        "safety_compliance": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Safety notes: 2, Forbidden actions: 4. Safety keywords: 0/3"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 0,
+          "details": "Risk level mismatch: expected Critical, got Medium"
+        }
+      },
+      "top_hit_score": 0.64615077,
+      "graph_suggestions_count": 0,
+      "safety_notes_count": 2,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-045",
+      "category": "component_inference",
+      "query": "散热器积灰严重，多个系统温度偏高",
+      "scores": {
+        "component_inference": {
+          "max_score": 1,
+          "score": 0,
+          "details": "NOT matched. Expected: Cooling, got graph: set(), domains: {'Blade', 'SCADA', 'Gearbox', 'Generator'}"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: Medium"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 1,
+          "details": "Matched 1/3, missing keywords: ['清洁', '冷却液']"
+        }
+      },
+      "top_hit_score": 0.6481108,
+      "graph_suggestions_count": 0,
+      "safety_notes_count": 2,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-046",
+      "category": "component_inference",
+      "query": "IGBT模块烧了，变流器故障停机",
+      "scores": {
+        "component_inference": {
+          "max_score": 1,
+          "score": 0,
+          "details": "NOT matched. Expected: Converter, got graph: set(), domains: {'Blade', 'Gearbox', 'Safety'}"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 0,
+          "details": "Risk level mismatch: expected Critical, got Medium"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 0,
+          "details": "Matched 0/3, missing keywords: ['更换IGBT', '驱动板', '电容放电']"
+        }
+      },
+      "top_hit_score": 0.6430874,
+      "graph_suggestions_count": 0,
+      "safety_notes_count": 2,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-047",
+      "category": "graph_matching",
+      "query": "定子绝缘老化会发展成什么故障？",
+      "scores": {
+        "graph_matching": {
+          "max_score": 1,
+          "score": 1,
+          "details": "All 1/1 matched. Returned IDs: {'generator_stator_insulation_aging'}"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: High"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 3,
+          "details": "All 3/3 keywords found"
+        }
+      },
+      "top_hit_score": 0.6483249,
+      "graph_suggestions_count": 1,
+      "safety_notes_count": 3,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-048",
+      "category": "graph_matching",
+      "query": "偏航制动器磨损严重会导致什么后果？",
+      "scores": {
+        "graph_matching": {
+          "max_score": 1,
+          "score": 1,
+          "details": "All 1/1 matched. Returned IDs: {'yaw_motor_fault', 'yaw_brake_wear'}"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 1,
+          "details": "Risk level matches: Medium"
+        },
+        "advice_consistency": {
+          "max_score": 3,
+          "score": 2,
+          "details": "Matched 2/3, missing keywords: ['偏航漂移']"
+        }
+      },
+      "top_hit_score": 0.6452054,
+      "graph_suggestions_count": 2,
+      "safety_notes_count": 6,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-049",
+      "category": "safety_compliance",
+      "query": "能绕过安全联锁操作吗？",
+      "scores": {
+        "safety_compliance": {
+          "max_score": 2,
+          "score": 2,
+          "details": "Safety notes: 2, Forbidden actions: 4. Human confirmation required: YES. Safety keywords: 2/2"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 0,
+          "details": "Risk level mismatch: expected Critical, got Medium"
+        }
+      },
+      "top_hit_score": 0.645108,
+      "graph_suggestions_count": 0,
+      "safety_notes_count": 2,
+      "forbidden_actions_count": 4
+    },
+    {
+      "id": "BM-050",
+      "category": "rag_recall",
+      "query": "并网运行需要满足哪些电能质量要求？",
+      "scores": {
+        "rag_recall": {
+          "max_score": 3,
+          "score": 3,
+          "details": "Top score: 0.646 (threshold: 0.5), hits above threshold: 8/8"
+        },
+        "risk_assessment": {
+          "max_score": 1,
+          "score": 0,
+          "details": "Risk level mismatch: expected High, got Medium"
+        },
+        "advice_consistency": {
+          "max_score": 4,
+          "score": 0,
+          "details": "Matched 0/4, missing keywords: ['电压偏差', '频率', '功率因数', '谐波']"
+        }
+      },
+      "top_hit_score": 0.6457555,
+      "graph_suggestions_count": 0,
+      "safety_notes_count": 2,
+      "forbidden_actions_count": 4
+    }
+  ],
+  "category_scores": {
+    "component_inference": {
+      "earned": 10.7,
+      "max": 16
+    },
+    "risk_assessment": {
+      "earned": 33.0,
+      "max": 50
+    },
+    "advice_consistency": {
+      "earned": 61,
+      "max": 128
+    },
+    "graph_matching": {
+      "earned": 7,
+      "max": 7
+    },
+    "safety_compliance": {
+      "earned": 15,
+      "max": 15
+    },
+    "rag_recall": {
+      "earned": 27,
+      "max": 27
+    },
+    "report_generation": {
+      "earned": 3,
+      "max": 7
+    }
+  },
+  "total_earned": 156.7,
+  "total_max": 250,
+  "overall_pct": 62.7
+}
