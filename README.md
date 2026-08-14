@@ -20,7 +20,7 @@
 <p align="center">
   <img alt="Rust" src="https://img.shields.io/badge/Rust-1.75+-dea584?logo=rust&logoColor=white" />
   <img alt="License" src="https://img.shields.io/github/license/TmxjTmxj/beifeng-wind-agent" />
-  <img alt="Benchmark" src="https://img.shields.io/badge/benchmark-91.4%25-2ea44f" />
+  <img alt="Benchmark" src="https://img.shields.io/badge/benchmark-99.3%25-2ea44f" />
   <img alt="Platform" src="https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey" />
   <img alt="Desktop" src="https://img.shields.io/badge/desktop-Tauri%202-blueviolet" />
 </p>
@@ -38,7 +38,7 @@ BeiFeng is a specialized **wind turbine operations &amp; maintenance (O&amp;M) a
 - 🕸️ **Fault graph** — lightweight component–symptom–cause graph with risk levels (`beifeng/knowledge/knowledge_graph/wind_fault_graph.json`)
 - 🛡️ **Rule-based safety layer** — forbidden actions, human-confirmation gates, safety-compliance evaluation
 - 📄 **Report generation** — templated Markdown inspection/maintenance reports under `beifeng/reports/generated/`
-- 🧪 **Benchmark harness** — 100-query, 10-category evaluation pipeline with regression baselines (**91.4% overall**)
+- 🧪 **Benchmark harness** — 100-query, 10-category evaluation pipeline with regression baselines (**99.3% overall**)
 - 🖥️ **Tauri desktop workstation** — workspace/file management, settings editor, memory timeline, reports browser, system monitor, agent console (React + TypeScript)
 - ⚙️ **Provider-agnostic runtime** — Anthropic &amp; OpenAI-compatible endpoints (DeepSeek, Qwen, etc.), streaming, tool-use, sessions, permissions, MCP, plugins
 - 🧩 **Extensible connectors** — schemas for SCADA / CMMS / weather / UAV data sources
@@ -175,7 +175,7 @@ python beifeng/evals/run_benchmark.py
 python beifeng/evals/eval_pipeline.py
 ```
 
-Current baseline: **91.4% overall** across 100 queries and 10 categories (component inference, graph matching, RAG recall, risk assessment, advice consistency, report generation, safety compliance, multi-component, historical context, SCADA-derived).
+Current baseline: **99.3% overall** (604/608) across 100 queries and 10 categories (component inference, graph matching, RAG recall, risk assessment, advice consistency, report generation, safety compliance, multi-component, historical context, SCADA-derived).
 
 ## Repository layout
 
