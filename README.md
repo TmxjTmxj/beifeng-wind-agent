@@ -194,6 +194,8 @@ python beifeng/evals/eval_pipeline.py
 
 Current baseline: **99.3% overall** (604/608) across 100 queries and 10 categories (component inference, graph matching, RAG recall, risk assessment, advice consistency, report generation, safety compliance, multi-component, historical context, SCADA-derived).
 
+📊 See [overview.md](overview.md) for the full illustrated benchmark report — progress charts, per-category scores, and remaining gaps.
+
 ## Repository layout
 
 ```text
