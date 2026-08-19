@@ -158,6 +158,7 @@ The Tauri desktop workstation ([apps/desktop/README.md](apps/desktop/README.md))
 - 🖥️ **Tauri desktop workstation** — workspace/file management, settings editor, memory timeline, reports browser, system monitor, agent console (React + TypeScript)
 - ⚙️ **Provider-agnostic runtime** — Anthropic &amp; OpenAI-compatible endpoints (DeepSeek, Qwen, etc.), streaming, tool-use, sessions, permissions, MCP, plugins
 - 🧩 **Extensible connectors** — schemas for SCADA / CMMS / weather / UAV data sources
+- 📋 **Engineering documentation** — end-to-end guide with a real diagnosis walkthrough and a real generated sample report ([docs/engineering-guide.md](docs/engineering-guide.md))
 
 ## Architecture
 
@@ -294,6 +295,12 @@ python beifeng/evals/eval_pipeline.py
 Current baseline: **99.3% overall** (604/608) across 100 queries and 10 categories (component inference, graph matching, RAG recall, risk assessment, advice consistency, report generation, safety compliance, multi-component, historical context, SCADA-derived).
 
 📊 See [overview.md](overview.md) for the full illustrated benchmark report — progress charts, per-category scores, and remaining gaps.
+
+### End-to-end engineering workflow
+
+🧭 [Engineering Guide](docs/engineering-guide.md) — the full pipeline from a fault description to an evidence-backed report, including a real diagnosis walkthrough (benchmark case BM-001: 叶片前缘裂纹 → Blade → RAG hit 0.815 → risk Medium → 4/4 advice).
+
+📄 [Real generated report](docs/sample-report-gearbox-overtemp.md) — an actual engine output for a gearbox oil-temperature event (risk **High**, confidence 0.75), with traceable knowledge-base evidence and graph nodes.
 
 ## Repository layout
 
