@@ -10,6 +10,7 @@
 
 <p align="center">
   <a href="#features">Features</a> ·
+  <a href="#screenshots">Screenshots</a> ·
   <a href="#architecture">Architecture</a> ·
   <a href="#quick-start">Quick Start</a> ·
   <a href="#usage">Usage</a> ·
@@ -30,6 +31,22 @@
 BeiFeng is a specialized **wind turbine operations &amp; maintenance (O&amp;M) agent**. It adapts a Claw Code–style agent runtime (Rust) to the wind-farm domain: a local RAG "Wind Knowledge Hub" built from fault cases, inspection manuals and regulations; a lightweight fault graph; rule-based diagnosis and risk assessment; Markdown inspection-report generation; and a Tauri desktop workstation that ties it all together — with safety boundaries enforced at the prompt, rule, and tool level.
 
 > ⚠️ **Domain safety notice**: this project is designed as an *assistant* for qualified wind-farm engineers. It never executes or recommends high-risk remote operations (shutdown, reset, pitch/yaw override, interlock bypass) without human confirmation. See [Safety](#safety).
+
+## Screenshots
+
+The Tauri desktop workstation (see [apps/desktop/README.md](apps/desktop/README.md)):
+
+| Startup home | Tools &amp; language | Settings &amp; credentials |
+| --- | --- | --- |
+| ![Startup home](apps/desktop/screenshots/p7.3b/01-startup-home.png) | ![Tools & language](apps/desktop/screenshots/p7.3b/02-tools-language.png) | ![Settings & credentials](apps/desktop/screenshots/p7.3b/03-settings-credentials.png) |
+
+| Chat agent | Live inspector | Agent console events |
+| --- | --- | --- |
+| ![Chat agent](apps/desktop/screenshots/p7.3b/04-chat-agent.png) | ![Live inspector](apps/desktop/screenshots/p7.4/01-live-inspector.png) | ![Agent console events](apps/desktop/screenshots/p7.4/02-agent-console-events.png) |
+
+| System monitor | Conversation tree &amp; artifacts | Workspace health report |
+| --- | --- | --- |
+| ![System monitor](apps/desktop/screenshots/p7.4/03-system-monitor.png) | ![Conversation tree & artifacts](apps/desktop/screenshots/p7.4/04-conversation-tree-artifacts.png) | ![Workspace health report](apps/desktop/screenshots/p7.4/05-workspace-health-report.png) |
 
 ## Features
 
