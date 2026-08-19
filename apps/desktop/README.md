@@ -4,21 +4,118 @@ A Tauri 2 + React + TypeScript desktop workstation for local-first BeiFeng Agent
 It controls local workspace files, settings, reports, memory, benchmark outputs, runtime launchers,
 and product navigation without modifying Agent intelligence or backend evaluation logic.
 
-![Startup home](screenshots/p7.3b/01-startup-home.png)
+<p align="center">
+  <img src="screenshots/p7.3b/01-startup-home.png" width="80%" alt="Startup home" />
+</p>
 
-## Screenshots
+## Screenshot Tour
 
-| Startup home | Tools &amp; language | Settings &amp; credentials |
-| --- | --- | --- |
-| ![Startup home](screenshots/p7.3b/01-startup-home.png) | ![Tools & language](screenshots/p7.3b/02-tools-language.png) | ![Settings & credentials](screenshots/p7.3b/03-settings-credentials.png) |
+### Chat with the agent
 
-| Chat agent | Live inspector | Agent console events |
-| --- | --- | --- |
-| ![Chat agent](screenshots/p7.3b/04-chat-agent.png) | ![Live inspector](screenshots/p7.4/01-live-inspector.png) | ![Agent console events](screenshots/p7.4/02-agent-console-events.png) |
+<table>
+<tr>
+<td width="55%">
 
-| System monitor | Conversation tree &amp; artifacts | Workspace health report |
-| --- | --- | --- |
-| ![System monitor](screenshots/p7.4/03-system-monitor.png) | ![Conversation tree & artifacts](screenshots/p7.4/04-conversation-tree-artifacts.png) | ![Workspace health report](screenshots/p7.4/05-workspace-health-report.png) |
+- Continuous conversation with Markdown rendering
+- Tool calls shown as collapsible cards
+- Conversation history sidebar
+
+</td>
+<td width="45%">
+  <img src="screenshots/p7.3b/04-chat-agent.png" width="100%" alt="Chat agent" />
+</td>
+</tr>
+</table>
+
+### Settings &amp; credentials
+
+<table>
+<tr>
+<td width="45%">
+  <img src="screenshots/p7.3b/03-settings-credentials.png" width="100%" alt="Settings & credentials" />
+</td>
+<td width="55%">
+
+- Categorized settings with search and JSON editor
+- Credential manager with show/hide
+- One-click RAG service control
+
+</td>
+</tr>
+</table>
+
+### Live inspector
+
+<table>
+<tr>
+<td width="55%">
+
+- Real-time tool calls, knowledge hits, graph hits and risk assessment
+- Execution trace driven by the runtime `AgentEvent` stream
+
+</td>
+<td width="45%">
+  <img src="screenshots/p7.4/01-live-inspector.png" width="100%" alt="Live inspector" />
+</td>
+</tr>
+</table>
+
+### Agent console
+
+<table>
+<tr>
+<td width="45%">
+  <img src="screenshots/p7.4/02-agent-console-events.png" width="100%" alt="Agent console events" />
+</td>
+<td width="55%">
+
+- Event timeline with tool duration and success rate
+- Raw event JSON with secret redaction
+
+</td>
+</tr>
+</table>
+
+### System monitor
+
+<table>
+<tr>
+<td width="55%">
+
+- Runtime, RAG and memory health at a glance
+- Benchmark, settings and API key environment status
+
+</td>
+<td width="45%">
+  <img src="screenshots/p7.4/03-system-monitor.png" width="100%" alt="System monitor" />
+</td>
+</tr>
+</table>
+
+### Workspace health report
+
+<table>
+<tr>
+<td width="45%">
+  <img src="screenshots/p7.4/05-workspace-health-report.png" width="100%" alt="Workspace health report" />
+</td>
+<td width="55%">
+
+- Health dashboard across runtime, RAG, memory, knowledge and graph
+- Duplicate / legacy file cleanup recommendations
+
+</td>
+</tr>
+</table>
+
+<details>
+<summary>More screenshots</summary>
+
+| Tools &amp; language | Conversation tree &amp; artifacts |
+| --- | --- |
+| ![Tools & language](screenshots/p7.3b/02-tools-language.png) | ![Conversation tree & artifacts](screenshots/p7.4/04-conversation-tree-artifacts.png) |
+
+</details>
 
 ## Highlights
 

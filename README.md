@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="#features">Features</a> ·
-  <a href="#screenshots">Screenshots</a> ·
+  <a href="#screenshot-tour">Screenshot Tour</a> ·
   <a href="#architecture">Architecture</a> ·
   <a href="#quick-start">Quick Start</a> ·
   <a href="#usage">Usage</a> ·
@@ -32,21 +32,120 @@ BeiFeng is a specialized **wind turbine operations &amp; maintenance (O&amp;M) a
 
 > ⚠️ **Domain safety notice**: this project is designed as an *assistant* for qualified wind-farm engineers. It never executes or recommends high-risk remote operations (shutdown, reset, pitch/yaw override, interlock bypass) without human confirmation. See [Safety](#safety).
 
-## Screenshots
+## Screenshot Tour
 
-The Tauri desktop workstation (see [apps/desktop/README.md](apps/desktop/README.md)):
+The Tauri desktop workstation ([apps/desktop/README.md](apps/desktop/README.md)):
 
-| Startup home | Tools &amp; language | Settings &amp; credentials |
-| --- | --- | --- |
-| ![Startup home](apps/desktop/screenshots/p7.3b/01-startup-home.png) | ![Tools & language](apps/desktop/screenshots/p7.3b/02-tools-language.png) | ![Settings & credentials](apps/desktop/screenshots/p7.3b/03-settings-credentials.png) |
+<p align="center">
+  <img src="apps/desktop/screenshots/p7.3b/01-startup-home.png" width="72%" alt="Startup home" />
+</p>
 
-| Chat agent | Live inspector | Agent console events |
-| --- | --- | --- |
-| ![Chat agent](apps/desktop/screenshots/p7.3b/04-chat-agent.png) | ![Live inspector](apps/desktop/screenshots/p7.4/01-live-inspector.png) | ![Agent console events](apps/desktop/screenshots/p7.4/02-agent-console-events.png) |
+### Chat with the agent
 
-| System monitor | Conversation tree &amp; artifacts | Workspace health report |
-| --- | --- | --- |
-| ![System monitor](apps/desktop/screenshots/p7.4/03-system-monitor.png) | ![Conversation tree & artifacts](apps/desktop/screenshots/p7.4/04-conversation-tree-artifacts.png) | ![Workspace health report](apps/desktop/screenshots/p7.4/05-workspace-health-report.png) |
+<table>
+<tr>
+<td width="55%">
+
+- Continuous conversation with Markdown rendering
+- Tool calls shown as collapsible cards
+- Conversation history sidebar
+
+</td>
+<td width="45%">
+  <img src="apps/desktop/screenshots/p7.3b/04-chat-agent.png" width="100%" alt="Chat agent" />
+</td>
+</tr>
+</table>
+
+### Settings &amp; credentials
+
+<table>
+<tr>
+<td width="45%">
+  <img src="apps/desktop/screenshots/p7.3b/03-settings-credentials.png" width="100%" alt="Settings & credentials" />
+</td>
+<td width="55%">
+
+- Categorized settings with search and JSON editor
+- Credential manager with show/hide
+- One-click RAG service control
+
+</td>
+</tr>
+</table>
+
+### Live inspector
+
+<table>
+<tr>
+<td width="55%">
+
+- Real-time tool calls, knowledge hits, graph hits and risk assessment
+- Execution trace driven by the runtime `AgentEvent` stream
+
+</td>
+<td width="45%">
+  <img src="apps/desktop/screenshots/p7.4/01-live-inspector.png" width="100%" alt="Live inspector" />
+</td>
+</tr>
+</table>
+
+### Agent console
+
+<table>
+<tr>
+<td width="45%">
+  <img src="apps/desktop/screenshots/p7.4/02-agent-console-events.png" width="100%" alt="Agent console events" />
+</td>
+<td width="55%">
+
+- Event timeline with tool duration and success rate
+- Raw event JSON with secret redaction
+
+</td>
+</tr>
+</table>
+
+### System monitor
+
+<table>
+<tr>
+<td width="55%">
+
+- Runtime, RAG and memory health at a glance
+- Benchmark, settings and API key environment status
+
+</td>
+<td width="45%">
+  <img src="apps/desktop/screenshots/p7.4/03-system-monitor.png" width="100%" alt="System monitor" />
+</td>
+</tr>
+</table>
+
+### Workspace health report
+
+<table>
+<tr>
+<td width="45%">
+  <img src="apps/desktop/screenshots/p7.4/05-workspace-health-report.png" width="100%" alt="Workspace health report" />
+</td>
+<td width="55%">
+
+- Health dashboard across runtime, RAG, memory, knowledge and graph
+- Duplicate / legacy file cleanup recommendations
+
+</td>
+</tr>
+</table>
+
+<details>
+<summary>More screenshots</summary>
+
+| Tools &amp; language | Conversation tree &amp; artifacts |
+| --- | --- |
+| ![Tools & language](apps/desktop/screenshots/p7.3b/02-tools-language.png) | ![Conversation tree & artifacts](apps/desktop/screenshots/p7.4/04-conversation-tree-artifacts.png) |
+
+</details>
 
 ## Features
 
